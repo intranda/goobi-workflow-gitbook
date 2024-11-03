@@ -6,10 +6,10 @@
 * [Goobi workflow Handbook](01_overview/01_README.md)
 * [Overview of documentation](01_overview/02_about.md)
 * [What is Goobi?](01_overview/03_what_is_goobi.md)
-* [Goobi for Users](02_users/01_overview/01_overview.md)
 
 ## Users <a href="#users" id="users"></a>
 
+* [Goobi for Users](02_users/01_overview/01_overview.md)
 * [The basics](02_users/02_general/02_general.md)
   * [Logging in](02_users/02_general/01_login/01_login.md)
   * [Menu](02_users/02_general/02_menu/02_menu.md)
