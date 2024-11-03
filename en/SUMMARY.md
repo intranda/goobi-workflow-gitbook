@@ -3,8 +3,8 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-* [Welcome](01_overview_en.md)
-* [Licence](02_licence_en.md)
+* [Welcome](01_overview.md)
+* [Licence](02_licence.md)
 
 ## Users <a href="#users" id="users"></a>
 
@@ -21,7 +21,7 @@
 
 ## Management <a href="#manager" id="manager"></a>
 
-* [Management](04_management/1_en.md)
+* [Management](04_management/1.md)
 
 ## Administration <a href="#admin" id="admin"></a>
 
