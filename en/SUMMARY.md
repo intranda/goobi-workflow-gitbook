@@ -3,27 +3,20 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-* [Welcome](01_overview.md)
-* [Licence](02_licence.md)
-
-## Users <a href="#users" id="users"></a>
-
-* [Overview](03_users/03_users.md)
-* [First steps](03_users/01_first_steps/01_first_steps.md)
-  * [Login](03_users/01_first_steps/01_login/01_login.md)
-  * [Settings](03_users/01_first_steps/02_settings/02_settings.md)
-    * [Tables](03_users/01_first_steps/02_settings/01_tables/01_tables.md)
-    * [Dashboard](03_users/01_first_steps/02_settings/02_dashboard/02_dashboard.md)
-    * [Lists](03_users/01_first_steps/02_settings/03_lists/03_lists.md)
-  * [Logout](03_users/01_first_steps/03_logout/03_logout.md)
-* [Tasks](03_users/02_tasks/02_tasks.md)
-* [User groups](03_users/03_usergroups/03_usergroups.md)
-
-## Management <a href="#manager" id="manager"></a>
-
-* [Management](04_management/1.md)
-
-## Administration <a href="#admin" id="admin"></a>
-
-* [LDAP](05_administration/01_ldap/01_ldap.md)
-* [Users and groups](05_administration/02_users_and_groups/02_users_and_groups.md)
+* [Goobi workflow Handbook](01_overview/01_README.md)
+* [Overview of documentation](01_overview/02_about.md)
+* [What is Goobi?](01_overview/03_what_is_goobi.md)
+* [null](02_users/01_overview/01_overview.md)
+* [null](02_users/02_general/02_general.md)
+  * [null](02_users/02_general/01_login/01_login.md)
+  * [null](02_users/02_general/02_menu/02_menu.md)
+  * [null](02_users/02_general/03_logout/03_logout.md)
+  * [null](02_users/02_general/04_language/04_language.md)
+  * [null](02_users/02_general/05_help/05_help.md)
+  * [null](02_users/02_general/06_settings/06_settings.md)
+  * [null](02_users/02_general/07_password/07_password.md)
+  * [null](02_users/02_general/08_tasks/08_tasks.md)
+  * [null](02_users/02_general/09_processes/09_processes.md)
+  * [null](02_users/02_general/10_search/10_search.md)
+  * [null](02_users/02_general/11_create_processes/11_create_processes.md)
+  * [null](02_users/02_general/12_configure_tasks/12_configure_tasks.md)
