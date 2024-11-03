@@ -1,6 +1,98 @@
-# null
+# Aufgabendetails bearbeiten
 
-`, um den Beginn des Datensatzes anzuzeigen. Kommentare sind mit einer Raute (`#`) gekennzeichnet und dürfen sowohl in einer eigenen Zeile, als auch am Ende einer inhaltlich genutzten Zeile stehen. Diese werden vom Interpreter ignoriert. Damit ist es auch möglich, bei experimentellen Konfigurationen bestimmte Teile "auszukommentieren".
+Auf der hier dargestellten Seite können die Details und Plugins für Aufgaben konfiguriert werden. Die Seite unterscheidet sich nicht wesentlich zwischen den Aufgaben von Produktionsvorlagen und denen von bereits existierenden Vorgängen. Unterschiede sind gegebenenfalls gekennzeichnet.
+
+![Auf dieser Seite können grundlegende Einstellungen und Plugins für Aufgaben konfiguriert werden.](taskDetails_de.png)
+
+## Titel
+
+In diesem Feld wird der Titel der Aufgabe angegeben. Dieser kann frei gewählt werden. Es sollte allerdings berücksichtigt werden, dass sich zum Beispiel GoobiScript Aufrufe an den jeweiligen Aufgabentiteln orientieren, um automatisiert über viele Vorgänge hinweg Hintergrundaufgaben auszuführen.
+
+Daher sollten Titel kurz, aussagekräftig und eindeutig sein. Leerzeichen und Sonderzeichen sind dabei erlaubt.
+
+## Reihenfolge
+
+Mit der Reihenfolgennummer wird angegeben, an welcher Stelle eine Aufgabe in einer Produktionsvorlage oder einem existierenden Vorgang steht. Es muss hier dementsprechend eine Ganzzahl angegeben werden.
+
+Die Reihenfolgennummer wird einerseits dazu verwendet, alle Aufgaben eines Vorgangs in der korrekten Bearbeitungsreihenfolge darzustellen. Andererseits werden beim Abschließen von Aufgaben diejenigen nächsten Aufgaben innerhalb eines Vorgangs freigeschaltet, die der Reihenfolge entsprechend der aktuellen Aufgabe folgen.
+
+Es können mehrere Aufgaben die selbe Reihenfolgennummer haben. Dies bedeutet dann für Goobi, dass die betreffenden Aufgaben gleichzeitig ausgeführt werden dürfen. Eine parallele Bearbeitung funktioniert sowohl mit automatischen, als auch mit manuellen Aufgaben (zum Beispiel wenn mehrere Mitarbeiter parallel an einem Vorgang arbeiten).
+
+Ist die Aufgabenreihenfolge eines Vorgangs lückenhaft konfiguriert (zum Beispiel 1, 2, 3, 6), so springt Goobi direkt weiter zur Aufgabe mit der nächstgrößeren Nummer.
+
+Die Reihenfolge von Aufgaben spielt unter anderem auch bei GoobiScript Aufrufen eine wichtige Rolle. Dort können, basierend auf der hier angegebenen Nummer, weitere administrative Vorkehrungen getroffen werden.
+
+## Parallele Aufgaben erlauben
+
+**Diese Einstellung ist nur beim Anlegen einer neuen Aufgabe innerhalb einer Produktionsvorlage verfügbar.**
+
+Diese Einstellung spielt zudem nur eine Rolle, wenn neue Aufgaben zwischen bereits bestehenden Aufgaben eingefügt werden sollen.
+
+Ist diese Option **gesetzt**, so wird beim Anlegen der Aufgabe die Reihenfolgennummer direkt gesetzt. Dabei kann es passieren, dass eine andere Aufgabe bereits mit der selben Nummer existiert und beide Aufgaben später parallel bearbeitet werden können.
+
+Ist diese Option **nicht gesetzt**, so werden im Falle einer Dopplung der Reihenfolgennummer mit derer einer anderen bereits bestehenden Aufgabe beim Speichern die Reihenfolgennummern der anderen und aller danach folgenden Aufgaben um genau eine Nummer nach hinten verschoben. Damit wird erzielt, dass die neu im Vorgang eingefügte Aufgabe keine bereits existierende Reihenfolgennummer dupliziert und trotzdem die danach folgenden Aufgaben ihre relativ zueinander definierte Nummerierung (inklusive fehlenden und doppelt vergebenen Nummern) beibehalten können.
+
+Sollte sich im Nachhinein herausstellen, dass diese Option beim Anlegen der Aufgabe falsch gewählt worden ist und sämtliche danach folgende Aufgaben eine "falsche" Reihenfolgennummer haben, so gibt es zwei mögliche Lösungen: Bei kleinen Anpassungen kann jederzeit in der Aufgabenübersicht der Produktionsvorlage mit den dafür zur Verfügung stehenden Buttons die Reihenfolgennummer angepasst werden. Bei großen Anpassungen, oder wenn bereits Vorgänge zu der aktuellen Produktionsvorlage existieren, wird empfohlen, ein GoobiScript so zu schreiben, dass es alle "falschen" Nummern anpasst und an sämtlichen falsch nummerierten Vorgängen ausgeführt wird.
+
+## Priorität
+
+In dieser Liste kann eine Priorität für die aktuelle Aufgabe ausgewählt werden. Dabei ist zu beachten, dass die Prioritäten `Standard`, `Priorität`, `Hohe Priorität` und `Höchste Priorität` nur dazu gedacht sind, die Wichtigkeit der Abarbeitung von Aufgaben visuell darzustellen. Diese haben keine weitere technische Auswirkung auf den entsprechenden Vorgang.
+
+Die Option `Korrektur` hat zwar ebenfalls keine Auswirkung auf den Vorgang, wird allerdings automatisch gesetzt, wenn das Endergebnis in einer abzuschließenden Aufgabe nicht akzeptiert werden soll und eine Korrekturmeldung gesendet wird.
+
+## Metadaten
+
+Diese Option kann aktiviert werden, wenn es im Sinne der Aufgabe ist, Metadaten zu bearbeiten.
+
+Ist eine Aufgabe mit der Eigenschaft `Metadaten` gekennzeichnet, so werden an verschiedenen Stellen in der Benutzeroberfläche weitere Symbole und Optionen eingeblendet, um auf Metadaten zuzugreifen. So wird zum Beispiel auch der Button zum Aufrufen des Metadeteneditors eingeblendet, wenn eine Aufgabe diese Eigenschaft hat.
+
+Sollen Metadaten in einer Aufgabe hochgeladen, heruntergeladen, validiert oder auf eine andere Art und Weise verwendet werden, so muss diese Option ausgewählt werden.
+
+## Bilder lesen
+
+Diese Option kann aktiviert werden, wenn der Benutzer in dieser Aufgabe einen Lesezugriff auf Bilddateien in seinem Benutzerordner (auf dem Goobi-Server) bekommen soll. Dies kann zum Beispiel der Fall sein, wenn Bilder heruntergeladen oder zur Qualitätsprüfung angezeigt werden sollen.
+
+## Bilder schreiben
+
+Diese Option kann aktiviert werden, wenn der Benutzer in dieser Aufgabe einen Schreibzugriff auf Bilddateien in seinem Benutzerordner (auf dem Goobi-Server) bekommen soll. Dies ist immer dann erforderlich, wenn Bilder hochgeladen oder bearbeitet werden sollen.
+
+## Beim Abschließen validieren
+
+Diese Option kann aktiviert werden, um beim Abschließen dieser Aufgabe die Metadaten des Vorgangs zu validieren. Diese Validierung hat nichts mit dem Validierungsplugin (siehe unten) zu tun. Die hier eingestellte Art der Validierung prüft, ob alle Metadaten, Strukturelemente (DocStructs) und Seitenzählungen entsprechend des Regelsatzes angewendet wurden.
+
+## Export
+
+Diese Option kann aktiviert werden, wenn es im Sinne der Aufgabe ist, Daten für die Weiterverarbeitung mit anderen Systemen zu exportieren. Dies können zum Beispiel andere Datenbankformate, Content-Management-Systeme (CMS) oder einfach nur bestimmte Dateiformate sein. Wird diese Aufgabe als Export-Aufgabe definiert, so muss im Feld `Plugin für Arbeitsschritt` ein Exportplugin ausgewählt werden. Exportplugins beginnen üblicherweise mit dem Präfix `intranda_export_`.
+
+Ist diese Aufgabe gleichzeitig eine automatische Aufgabe und eine Exportaufgabe, so findet der Export automatisch statt. Unabhängig davon bekommt der Benutzer einen Export-Button bei der entsprechenden Aufgabe in der Übersicht angezeigt und kann den Datenbestand auch manuell exportieren.
+
+## Aufgabe überspringen
+
+Diese Option kann ausgewählt werden, wenn die Aufgabe im Vorgang übersprungen werden soll. Hat eine Aufgabe diese Eigenschaft, so wird sie automatisch geschlossen, sobald sie ein Nutzer annimmt. Ist diese Aufgabe eine automatische Aufgabe, so wird sie ebenfalls übersprungen und dabei geschlossen.
+
+## Automatische Aufgabe
+
+Verschiedene Arten von Aufgaben können als automatische Aufgaben konfiguriert werden. Damit ist es möglich, dass zum Beispiel Plugins oder GoobiScript Aufrufe entweder direkt oder in einer der zur Verfügung stehenden Warteschlangen ausgeführt werden.
+
+Konkret können folgende Aufgabentypen automatisiert werden: Interne Aufgaben (`intranda_step_*`), Exportaufgaben (`intranda_export_*`), Skript-Aufgaben, HTTP-Aufgaben und Zeitverzögerungsaufgaben (`intranda_delay_*`). Es ist jeweils darauf zu achten, dass das entsprechende Plugin oder Skript wie im entsprechenden Kapitel beschrieben ausgewählt wird.
+
+Um Warteschlangen nutzen zu können, müssen diese zunächst in den entsprechenden Konfigurationsdateien (`goobi_config.properties` und `goobi_activemq.xml`) eingeschaltet und eingerichtet werden. Wird danach diese Option aktiviert, so erscheint unterhalb der Checkbox ein Dropdown-Menü, aus denen die gewünschte Warteschlange ausgewählt werden kann.
+
+Wird die Option `Nicht in Warteschlange ausführen` gewählt, so wird das entsprechende Plugin oder Skript direkt ausgeführt, sobald die Aufgabe im Vorgang erreicht wird. Diese Option wird nur für Aufgaben empfohlen, die durch den Benutzer in Echtzeit ausgelöst werden sollen, indem zum Beispiel die vorherige Aufgabe abgeschlossen wird.
+
+Mit den Optionen `Warteschlange für schnelle Jobs` und `Warteschlange für langsame Jobs` stehen zwei unabhängig voneinander arbeitende Warteschlangen zur Verfügung, die im Normalfall für die meisten automatischen Aufgaben die richtige Wahl sind. Dabei ist die schnelle Warteschlange für Aufgaben gedacht, die eine eher kurze Ausführzeit haben und zeitnah abgeschlossen werden sollen.
+
+Die langsame Warteschlange hingegen sollte für Aufgaben verwendet werden, die viel Rechenzeit benötigen und bei denen es nicht wirklich relevant ist, wie schnell sie abgeschlossen werden. So kann die langsame Warteschlange zum Beispiel für große Mengen an Bildexporten, OCR-Analysen, 3D-Berechnungen oder andere komplexe Anwendungen genutzt werden. Somit ist diese Warteschlange auch für Aufgaben geeignet, die mitunter über viele Tausende Vorgänge hinweg eine Gesamtrechenzeit von Stunden, Tagen oder sogar noch längeren Zeiträumen beanspruchen.
+
+Goobi priorisiert allerdings standardmäßig immer Aufgaben, die durch Nutzer in Echtzeit ausgeführt werden und Aufgaben, die sich in der schnellen Warteschlange befinden. Ist Goobi tagsüber zum Beispiel durch die Arbeit vieler aktiver Mitarbeiter ausgelastet und besteht zusätzlich eine gut gefüllte langsame Warteschlange, ist es daher üblich, dass diese ihren größten Fortschritt nachts erzielt.
+
+Zusätzlich gibt es eine `Von außen erreichbare Warteschlange`. Diese kann von REST-API-Anfragen verwendet werden. Passende REST-API-Anfragen werden üblicherweise durch Plugins zur Verfügung gestellt.
+
+## Thumbnails erzeugen
+
+Soll die Aufgabe dazu verwendet werden, Vorschaubilder (engl. thumbnails) zu generieren, so muss diese Checkbox ausgewählt werden. Es erscheint dann ein Texteingabefeld, in dem eine Beispielkonfiguration für das Generieren von Vorschaubildern angegeben ist. Diese sollte für die projekteigenen Bedürfnisse angepasst werden.
+
+Das Texteingabefeld umfasst mehrere Zeilen, in denen eine YAML-kompatible Notation von Schlüssel-Wert-Paaren erwartet wird. Schlüssel-Wert-Paare werden durch jeweils einen Doppelpunkt (`:`) getrennt und jede Zeile darf genau ein Schlüssel-Wert-Paar beinhalten. Dabei steht in der ersten Zeile die Zeichenfolge `---`, um den Beginn des Datensatzes anzuzeigen. Kommentare sind mit einer Raute (`#`) gekennzeichnet und dürfen sowohl in einer eigenen Zeile, als auch am Ende einer inhaltlich genutzten Zeile stehen. Diese werden vom Interpreter ignoriert. Damit ist es auch möglich, bei experimentellen Konfigurationen bestimmte Teile "auszukommentieren".
 
 Zu Beginn steht folgende Beispielkonfiguration in dem Texteingabefeld:
 

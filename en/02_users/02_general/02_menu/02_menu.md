@@ -1,6 +1,4 @@
-# null
-
-# 2.2. Menu
+# Menu
 
 As is usually the case for web applications, you will find a navigation menu. After logging in, users can select from a number of options depending on their level of authorisation. The diagrams below show what the menu bar can look like after login depending on the authorisation level of the user.
 

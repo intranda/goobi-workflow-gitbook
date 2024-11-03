@@ -1,6 +1,4 @@
-# null
-
-# 2.  The basics
+# The basics
 
 Before we look in detail at the methodology of specific user groups, let us take a look at some basics. Any of the terms used in this section that may not be familiar to you can be found together with an explanation in the glossary.
 

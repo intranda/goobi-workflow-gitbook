@@ -1,6 +1,98 @@
-# null
+# Edit task details
 
-` to indicate the beginning of the data set. Comments are marked with a hash (`#`) and may be placed in a separate line as well as at the end of a line used for content. They are ignored by the interpreter. Thus it is also possible to "comment out" certain parts in experimental configurations.
+On the page shown here, the details and plugins for tasks can be configured. The page does not differ significantly between tasks of process templates and those of existing processes. Differences are marked where appropriate.
+
+![On this page, fundamental settings and plugins can be configured for tasks.](taskDetails_en.png)
+
+## Title
+
+The title of the task is specified in this field. This can be freely selected. However, it should be taken into account that GoobiScript calls, for example, use the respective task titles to automatically execute background tasks across many processes.
+
+Therefore titles should be short, meaningful and unique. Spaces and special characters are allowed.
+
+## Order
+
+The position number is used to specify the position of a task in a process template or an existing process. Accordingly, an integer must be specified here.
+
+On the one hand, the position number is used to display all tasks of a process in the correct processing sequence. On the other hand, when tasks are completed, those next tasks within a process that follow the sequence according to the current task are unlocked.
+
+Several tasks can have the same position number. This then means for Goobi that the concerning tasks may be executed simultaneously. Parallel processing works with both automatic and manual tasks (for example, when several employees are working on a task in parallel).
+
+If the task sequence of a process is configured with gaps (for example 1, 2, 3, 6), Goobi jumps directly to the task with the next highest number.
+
+The order of tasks also plays an important role in GoobiScript calls. There, based on the number specified here, further administrative precautions can be taken.
+
+## Allow parallel tasks
+
+**This setting is only available when creating a new task within a process template.**
+
+Furthermore, this setting is only relevant when new tasks are to be inserted between already existing tasks.
+
+If this option is **set**, the position number is set directly when the task is created. It may happen that another task already exists with the same number and both tasks can be processed in parallel later.
+
+If this option is **not set**, then in the case of a duplication of the sequence number with that of another already existing task, the sequence numbers of the other and all subsequent tasks are shifted back by exactly one number when saving. This ensures that the new task inserted in the process does not duplicate any existing position number and that the subsequent tasks can still retain their defined numbering relative to each other (including missing and duplicated numbers).
+
+If it turns out afterwards that this option was wrongly selected when creating the task and all subsequent tasks have a "wrong" position number, there are two possible solutions: For small adjustments, the position number can be adjusted at any time in the task overview of the process template using the buttons available for this purpose. For large adjustments, or if tasks already exist for the current process template, it is recommended to write a GoobiScript so that it adjusts all "wrong" numbers and is executed on all incorrectly numbered tasks.
+
+## Priority
+
+In this list it is possible to select a priority for the current task. It should be noted that the priorities `Standard`, `Priority`, `High priority` and `Highest priority` are only intended to visually represent the importance of tasks. They have no further technical effect on the corresponding process.
+
+The `Correction` option also has no effect on the task, but is automatically set if the final result in a task to be completed is not to be accepted and a correction message is sent.
+
+## Metadata
+
+This option can be activated if it is in the sense of the task to edit metadata.
+
+If a task is marked with the `Metadata` property, additional icons and options are displayed at various places in the user interface to access metadata. For example, the button for calling the metadata editor is also displayed if a task has this property.
+
+If metadata in a task is to be uploaded, downloaded, validated or used in any other way, this option must be selected.
+
+## Read images
+
+This option can be enabled if the user in this task should get read access to image files in his user folder (on the Goobi server). This may be the case, for example, when images are to be downloaded or displayed for quality checking.
+
+## Write images
+
+This option can be activated if the user in this task should get write access to image files in his user folder (on the Goobi server). This is required whenever images are to be uploaded or edited.
+
+## Validate on exit
+
+This option can be enabled to validate the metadata of the process when completing this task. This validation has nothing to do with the validation plugin (see below). The type of validation set here checks if all metadata, structure elements (DocStructs) and page counts have been applied according to the rule set.
+
+## Export
+
+This option can be enabled if it is in the sense of the task to export data for further processing with other systems. This can be, for example, other database formats, content management systems (CMS) or simply certain file formats. If this task is defined as an export task, an export plugin must be selected in the 'Step plugin' field. Export plugins usually start with the prefix `intranda_export_`.
+
+If this task is an automatic task and an export task at the same time, the export will take place automatically. Regardless of this, the user will see an export button next to the corresponding task in the overview and can also export the dataset manually.
+
+## Skip this task
+
+This option can be selected if the task should be skipped in the process. If a task has this property, it will be closed automatically as soon as a user accepts it. If this task is an automatic task, it will also be skipped and closed automatically.
+
+## Automatic task
+
+Different types of tasks can be configured as automatic tasks. This allows, for example, plugins or GoobiSript calls to be executed either directly or in one of the available processing queues.
+
+Specifically, the following types of tasks can be automated: Internal tasks (`intranda_step_*`), export tasks (`intranda_export_*`), script tasks, HTTP tasks and time delay tasks (`intranda_delay_*`). In each case, make sure that the appropriate plugin or script is selected as described in the corresponding chapter.
+
+In order to use processing queues, they must first be enabled and set up in the corresponding configuration files (`goobi_config.properties` and `goobi_activemq.xml`). If this option is then activated, a drop-down menu appears below the checkbox from which the desired processing queue can be selected.
+
+If the option `Don't execute in processing queue` is selected, the corresponding plugin or script will be executed directly as soon as the task is reached in the process. This option is recommended only for tasks that should be triggered by the user in real time, for example by completing the previous task.
+
+The `Processing queue for fast jobs` and `Processing queue for slow jobs` options provide two independently operating processing queues that are normally the right choice for most automated tasks. The fast processing queue is intended for tasks that have a rather short execution time and should be completed promptly.
+
+The slow processing queue, on the other hand, should be used for tasks that require a lot of processing time and for which it is not really relevant how quickly they are completed. For example, the slow processing queue can be used for large amounts of image exports, OCR analysis, 3D calculations, or other complex applications. As a result, this processing queue is also suitable for tasks that sometimes require a total computing time of hours, days or even longer over many thousands of processes.
+
+However, by default, Goobi always prioritizes tasks that are being executed by users in real time and tasks that are in the fast processing queue. For example, if Goobi is busy during the day due to the work of many active employees and there is also a well-filled slow processing queue, it is therefore common for this to make its greatest progress at night.
+
+In addition, there is an `In queue for external processing` option. This processing queue can be used by REST API requests. Suitable REST API requests are usually provided by plugins.
+
+## Generate thumbnails
+
+If the task is to be used to generate thumbnails, this checkbox must be selected. A text input field then appears, in which an example configuration for the generation of thumbnails is given. This should be adapted for the project's own needs.
+
+The text input field includes several lines in which a YAML-compatible notation of key-value pairs is expected. Key-value pairs are separated by a colon (`:`) and each line may contain exactly one key-value pair. The first line contains the string `---` to indicate the beginning of the data set. Comments are marked with a hash (`#`) and may be placed in a separate line as well as at the end of a line used for content. They are ignored by the interpreter. Thus it is also possible to "comment out" certain parts in experimental configurations.
 
 At the beginning the following example configuration is in the text input field:
 

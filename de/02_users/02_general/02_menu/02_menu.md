@@ -1,14 +1,12 @@
-# null
-
-# 2.2. Menü
+# Menü
 
 Die Navigation erfolgt, wie üblich bei Webanwendungen, über ein Navigationsmenü. Nachdem ein Benutzer eingeloggt ist, bieten sich für ihn in der Navigation je nach zugewiesenen Benutzerrechten verschiedene Optionen. Im Folgenden sehen Sie einige Beispiele wie die Menüleiste von Goobi je nach Rechten des eingeloggten Benutzers unterschiedlich aussehen kann.
 
-![Men&#xFC; f&#xFC;r einen Nutzer mit einfachen Rechten](../../.gitbook/assets/30-04d.png)
+![Menü für einen Nutzer mit einfachen Rechten](screen04_de.png)
 
-![Men&#xFC; f&#xFC;r einen Nutzer mit erweiterten Rechten](../../.gitbook/assets/30-03d.png)
+![Menü für einen Nutzer mit erweiterten Rechten](screen03_de.png)
 
-![Men&#xFC; f&#xFC;r Nutzer mit administrativen Rechten](../../.gitbook/assets/30-02d.png)
+![Menü für Nutzer mit administrativen Rechten](screen02_de.png)
 
 Wie an den drei Abbildungen deutlich wird, sind die Möglichkeiten der Arbeiten mit Goobi je nach Benutzerrechten sehr verschieden. Während ein Projektmitarbeiter beispielsweise als Scanoperateur in seinem Projekt lediglich einen Einblick in seine konkrete Arbeit hat, bieten sich für Benutzer mit erweiterten Rechten zum Teil wesentlich andere, umfangreichere Möglichkeiten mit Goobi zu arbeiten.
 

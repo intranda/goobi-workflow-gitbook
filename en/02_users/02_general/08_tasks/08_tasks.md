@@ -1,17 +1,28 @@
-# null
+# My tasks
 
-| :--- |
-| ![](../../.gitbook/assets/prio_standard.png) | The task priority level is normal. |
-| ![](../../.gitbook/assets/prio_1e.png) | The task has priority and should therefore be given preference. |
-| ![](../../.gitbook/assets/prio_2e.png) | The task has a high priority and should therefore be completed quickly. |
-| ![](../../.gitbook/assets/prio_3e.png) | The task has top priority and should therefore be completed urgently. |
-| ![](../../.gitbook/assets/prio_correction.png) | At least one correction message has been issued in relation to this task or other tasks in the process workflow. This task should therefore be given preference. |
+After logging in, most users continue with the menu option `My tasks` in the menu bar. This will display a screen similar to the one shown below:
+
+![&#x2018;My tasks&#x2019; list for a scan operator](30-14e.png)
+
+In the `My tasks` list, you will only find those process tasks that form part of a project to which you have been assigned and which you are qualified to perform. In the diagram above, for example, a scan operator will only be shown tasks that are currently at the scanning stage of the overall workflow. The task name is shown in the `Task` column, while the name of the process to which the task belongs is shown in the `Process title` column.
+
+The Project column displays the name of the corresponding project, and the `Priority` column provides a simple overview of the priority of the individual step. The priorities can be one of the following:
+
+_**Explanation of the symbols for the priorities of a workflow step**_
+
+| **Priority** | **Meaning** |
+| :--- | :--- |
+| ![](prio_standard.png) | The task priority level is normal. |
+| ![](prio_1e.png) | The task has priority and should therefore be given preference. |
+| ![](prio_2e.png) | The task has a high priority and should therefore be completed quickly. |
+| ![](prio_3e.png) | The task has top priority and should therefore be completed urgently. |
+| ![](prio_correction.png) | At least one correction message has been issued in relation to this task or other tasks in the process workflow. This task should therefore be given preference. |
 
 Depending on your configuration and the process involved, you will also find additional information next to the status symbol that tells you how urgent the task is. If you see a priority symbol, this means that the project manager has prioritised this step. Tasks will always be shown in priority order regardless of which column you have chosen as the basis for sorting and listing your tasks.
 
 As well as these priority indicators, there is an option to send error messages back from a later to an earlier point in the workflow. This means that errors detected at a later stage can be redirected backwards along with an error report. A red `Correction` button with a warning symbol in the `My tasks` list will immediately show the responsible person that the task listed in that row is one that was previously completed but that has now been found to contain an error. To display the error message, hold the cursor briefly over the red Correction button.
 
-![An error message is attached to one of the tasks to inform the scan operator that some images are missing](../../.gitbook/assets/30-15e.png)
+![An error message is attached to one of the tasks to inform the scan operator that some images are missing](30-15e.png)
 
 The status of each task can also be identified from the icon displayed in the `Actions` column. Within the `My tasks` area, you will come across the following Action symbols:
 
@@ -19,12 +30,12 @@ _**Explanation of symbols used for indicating the status of a workflow step**_
 
 | **Symbol** | **Meaning** |
 | :--- | :--- |
-| ![](../../.gitbook/assets/taske.png) | This task is not currently being processed. Click on the icon to accept the task. |
-| ![](../../.gitbook/assets/taskd.png) | This icon indicates that you are already processing this task. Click on the icon to open the detailed view for this step. |
-| ![](../../.gitbook/assets/taskb.png) | This icon indicates that the task in question is already being processed by another user. Click on the icon to display the details of the task. You cannot work on this task unless it is first released by your Goobi administrator. |
-| ![](../../.gitbook/assets/taska.png) | This task is part of a batch. It can be accepted and processed together with other tasks in the same batch. |
-| ![](../../.gitbook/assets/taskc.png) | This icon indicates that the task is a batch task that you have already accepted. |
-| ![](../../.gitbook/assets/taskf.png) | This icon indicates that the task is a batch task that has already been accepted by another user. Click on the icon to display the details of the task. You cannot work on this task unless it is first released by your Goobi administrator. |
+| ![](taske.png) | This task is not currently being processed. Click on the icon to accept the task. |
+| ![](taskd.png) | This icon indicates that you are already processing this task. Click on the icon to open the detailed view for this step. |
+| ![](taskb.png) | This icon indicates that the task in question is already being processed by another user. Click on the icon to display the details of the task. You cannot work on this task unless it is first released by your Goobi administrator. |
+| ![](taska.png) | This task is part of a batch. It can be accepted and processed together with other tasks in the same batch. |
+| ![](taskc.png) | This icon indicates that the task is a batch task that you have already accepted. |
+| ![](taskf.png) | This icon indicates that the task is a batch task that has already been accepted by another user. Click on the icon to display the details of the task. You cannot work on this task unless it is first released by your Goobi administrator. |
 
 If you wish to check the meaning of any of these symbols, simply hold the cursor over the symbol in question. In the `Actions` column, for example, this might show you which user is already working on that particular task.
 
@@ -32,7 +43,7 @@ If the number of hits is very large, you can choose to navigate between differen
 
 There is some scope for changing the way the list of tasks is displayed under the heading `My tasks`. As a general rule, you can arrange the tasks in ascending or descending order for any of the columns. If too many tasks are displayed, you can use the menu options above the table to modify the display.
 
-![You can use the table menu options to modify the way the information is displayed.](../../.gitbook/assets/30-16e.png)
+![You can use the table menu options to modify the way the information is displayed.](30-16e.png)
 
 If you wish to modify the display, the following options are available:
 
@@ -50,7 +61,7 @@ As well as the check boxes that you can tick to restrict the range of tasks disp
 
 This way, even complex filter terms can be selected and applied at any time from a list of previously saved terms. To save a filter and include it in the list of predefined filters, simply click on the save symbol after entering the term. You can then select and apply it any time you wish from the list.
 
-![Applying a filter from the list of predefined filters](../../.gitbook/assets/30-17e.png)
+![Applying a filter from the list of predefined filters](30-17e.png)
 
 If you want Goobi to display more columns in the `My tasks` list, you can choose from the following:
 
@@ -64,6 +75,6 @@ _**List of available columns that can be added to the task list**_
 | Locks | The `Locks` column lists the names of other users who have opened and are currently using Goobi’s internal METS Editor. Only one person at a time can use the METS editor to process structure data and metadata. Depending on your location and configuration, several people may be responsible for individual projects and tasks, and the Locks column allows you to see whether any of your colleagues is currently working on the metadata for specific processes. |
 | Batch | The `Batch` column will display the batch ID for the process. This column will contain a value only if the corresponding process forms part of a batch with other processes, i.e. in cases where various processes are to be worked through at the same time. |
 
-![List of possible additional actions](../../.gitbook/assets/30-18e.png)
+![List of possible additional actions](30-18e.png)
 
 To adjust the column display, just select the column that you wish to add to the table display. To do so, tick the corresponding checkbox.

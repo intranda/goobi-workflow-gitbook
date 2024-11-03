@@ -1,6 +1,4 @@
-# null
-
-# 2.  Allgemeines
+# Allgemeines
 
 Bevor auf die Arbeitsweise spezieller Nutzergruppen im Detail eingegangen wird, soll zunächst einmal einiges Allgemeines geklärt werden. Begriffe, die an dieser Stelle verwendet werden und deren Bedeutung nicht klar wird, werden im Glossar näher erläutert.
 

@@ -1,6 +1,4 @@
-# null
-
-# 2.1.  Logging in
+# Logging in
 
 To work with Goobi you will need a valid user name and password. You will usually receive these from your system administrator. In most case, they will be the same as those you were given for access to the operating system, for example. Please contact your system administrator or the Goobi support team at intranda GmbH if you have any problems with access or user authentication.
 
