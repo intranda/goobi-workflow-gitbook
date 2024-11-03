@@ -4,14 +4,14 @@
 ## Übersicht <a href="#overview" id="overview"></a>
 
 * [Goobi workflow Handbuch](01_overview/01_README.md)
-* [null](01_overview/02_about.md)
+* [Dokumentationsübersicht](01_overview/02_about.md)
 * [Was ist Goobi?](01_overview/03_what_is_goobi.md)
 * [Goobi für Anwender](02_users/01_overview/01_overview.md)
 
 ## Anwender <a href="#users" id="users"></a>
 
 * [Allgemeines](02_users/02_general/02_general.md)
-  * [null](02_users/02_general/01_login/01_login.md)
+  * [Einloggen](02_users/02_general/01_login/01_login.md)
   * [Menü](02_users/02_general/02_menu/02_menu.md)
   * [Ausloggen](02_users/02_general/03_logout/03_logout.md)
   * [Sprachumschaltung](02_users/02_general/04_language/04_language.md)

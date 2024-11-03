@@ -1,6 +1,4 @@
-# null
-
-# 2.1.  Einloggen
+# Einloggen
 
 Für die Arbeit mit Goobi benötigen Sie einen gültigen Zugang. Einen solchen erhalten Sie üblicherweise von ihrem Systemadministrator. In den meisten Fällen ist dieser Benutzerzugang der gleiche, der in den meisten Institutionen z. B. auch für das Betriebssystem vergeben wurde. Bei Problemen mit dem Zugang zu Goobi und der Benutzerauthentifizierung wenden Sie sich bitte an Ihren Systemadministrator oder an den Support der intranda GmbH.
 
