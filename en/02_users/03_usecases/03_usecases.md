@@ -1,0 +1,3 @@
+# How different user groups work with Goobi
+
+The next section examines some typical user groups in order to illustrate their structure as part of digitisation projects at numerous establishments and the way they work with Goobi on a daily basis. In terms of the way tasks are performed, any user groups or methods that may be in place at your own establishment but not specifically represented below will nevertheless work along similar lines to those shown in the examples. Accordingly, all the examples given are also applicable to individual workflows and other project-specific arrangements.
