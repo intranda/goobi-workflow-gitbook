@@ -31,7 +31,7 @@
   * [Metadata processing](02_users/03_usecases/05_metadata/05_metadata.md)
   * [Export to the DMS](02_users/03_usecases/06_export/06_export.md)
 * [Metadata Editor](02_users/04_metadata_editor/04_metadata_editor.md)
-  * [null](02_users/04_metadata_editor/01_user_interface/01_user_interface.md)
+  * [User interface](02_users/04_metadata_editor/01_user_interface/01_user_interface.md)
     * [Structure tree](02_users/04_metadata_editor/01_user_interface/01_structure/01_structure.md)
     * [Page display](02_users/04_metadata_editor/01_user_interface/02_image_view/02_image_view.md)
     * [Menu options](02_users/04_metadata_editor/01_user_interface/03_menu/03_menu.md)
@@ -49,6 +49,9 @@
     * [Server-based imports](02_users/04_metadata_editor/03_check/05_serverside_import/05_serverside_import.md)
   * [Edit OCR results](02_users/04_metadata_editor/04_ocr/04_ocr.md)
   * [Overview of the keyboard combinations](02_users/04_metadata_editor/05_shortcuts/05_shortcuts.md)
+
+## Management <a href="#manager" id="manager"></a>
+
 * [Goobi Management](03_manager/03_manager.md)
 * [Structure of the extended user interface](03_manager/01_user_interface/01_user_interface.md)
 * [Rulesets](03_manager/02_rulesets/02_rulesets.md)
@@ -62,6 +65,9 @@
   * [GoobiScript](03_manager/06_processes/04_goobiscript/04_goobiscript.md)
 * [Variables](03_manager/07_variables/07_variables.md)
 * [Harvester](03_manager/08_harvester/08_harvester.md)
+
+## Administration <a href="#admin" id="admin"></a>
+
 * [Goobi Administration](04_admin/04_admin.md)
 * [File system](04_admin/01_filesystem/01_filesystem.md)
   * [Global directory structure](04_admin/01_filesystem/01_folder_structure/01_folder_structure.md)
@@ -80,7 +86,7 @@
 * [MySQL database](04_admin/02_services/02_mysql.md)
 * [Apache Tomcat servlet container](04_admin/02_services/03_tomcat.md)
 * [User authentication using LDAP](04_admin/02_services/04_ldap.md)
-* [Dateisystemzugriff mittels Samba](04_admin/02_services/05_samba.md)
+* [File system access using Samba](04_admin/02_services/05_samba.md)
 * [Exporting to digital libraries](04_admin/03_export/01_index.md)
 * [Technical data](04_admin/03_export/02_technical_data.md)
 * [Mets parameters](04_admin/03_export/03_mets_parameters.md)

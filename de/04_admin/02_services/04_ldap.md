@@ -46,13 +46,13 @@ ldap_use=true
 <!---
 Dieses Bildschirmfoto ist veraltet und kann durch die anderen vier Bilder (siehe Kommentare unten) ersetzt werden.
 Es fehlen auf diesem Bild zwei neuere Einstellungen und ein paar Details entsprechen nicht mehr der heutigen Ansicht.
-![Konfiguration der LDAP-Gruppen](../../.gitbook/assets/30-60d.png)
+![Konfiguration der LDAP-Gruppen](30-60d.png)
 -->
 
 LDAP-Gruppen können in Goobi im Bereich `Administration` -> `Authentifizierung` eingerichtet werden. Es wird zunächst eine Liste mit bereits eingerichteten Authentifizierungsoptionen angezeigt. Um eine LDAP-Gruppe einzurichten, muss eine neue Authentifizierung angelegt werden.
 
 <!--- Hier soll ein Bild von ldap_all.xhtml mit drei Beispiel-Authentifikationen (OpenID, LDAP und Datenbank) zu sehen sein. -->
-![Liste der bereits eingerichteten Authentifizierungen](../../.gitbook/assets/PLACEHOLDER.png)
+![Liste der bereits eingerichteten Authentifizierungen](PLACEHOLDER.png)
 
 Aktuell stehen drei Authentifizierungsarten zur Verfügung. Bei allen muss mindestens ein Name, ein Typ und ein Login-Shell-Befehl ausgewählt werden. Wird als Typ LDAP ausgewählt, so stehen einige weitere Optionen zur Verfügung. Außerdem stehen für LDAP insgesamt drei Tabs (`Allgemein`, `Details` und `Authentifizierung`) zur Verfügung.
 
@@ -69,7 +69,7 @@ Auf der Seite `Allgemein` werden grundlegende Einstellungen zur LDAP-Gruppe vorg
 | Samba Primary Group SID | Hier wird die Gruppen ID für die Nutzergruppe beim Samba-Server angegeben. |
 
 <!--- Hier soll ein Bild von ldap_edit.xhtml, Tab 1 (Allgemein) zu sehen sein. -->
-![Einrichtung einer LDAP-Gruppe: Allgemein](../../.gitbook/assets/PLACEHOLDER.png)
+![Einrichtung einer LDAP-Gruppe: Allgemein](PLACEHOLDER.png)
 
 Auf der Seite `Details` werden viele weitere Details zur LDAP-Gruppe eingestellt.
 
@@ -93,7 +93,7 @@ Auf der Seite `Details` werden viele weitere Details zur LDAP-Gruppe eingestellt
 | Attributname Benutzerverzeichnis | Mit diesem Wert kann auf älteren Systemen angegeben werden, mit welchem Key in der Goobi-Konfiguration das LDAP-Nutzer-Home-Verzeichnis angegeben ist. |
 
 <!--- Hier soll ein Bild von ldap_edit.xhtml, Tab 2 (Details) zu sehen sein. -->
-![Einrichtung einer LDAP-Gruppe: Details](../../.gitbook/assets/PLACEHOLDER.png)
+![Einrichtung einer LDAP-Gruppe: Details](PLACEHOLDER.png)
 
 Auf der Seite `Authentifizierung` werden technische Details zur Authentifizierung bei dem im `Allgemein`-Tab eingerichteten LDAP-Service angegeben. Diese Seite beinhaltet einige Einstellungen, die früher nur einmalig in der Konfigurationsdatei `goobi_config.properties` vorgenommen werden konnten und können nun für diese spezielle LDAP-Authentifizierung angegeben werden.
 
@@ -111,7 +111,7 @@ Auf der Seite `Authentifizierung` werden technische Details zur Authentifizierun
 | TLS | Diese Option kann ausgewählt werden, um die Transport-Layer-Security-Verschlüsselung (TLS) zu verwenden. | 
 
 <!--- Hier soll ein Bild von ldap_edit.xhtml, Tab 3 (Authentifizierung) zu sehen sein. -->
-![Einrichtung einer LDAP-Gruppe: Authentifizierung](../../.gitbook/assets/PLACEHOLDER.png)
+![Einrichtung einer LDAP-Gruppe: Authentifizierung](PLACEHOLDER.png)
 
 ## Konfiguration im Betriebssystem
 

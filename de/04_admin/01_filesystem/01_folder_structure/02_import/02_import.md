@@ -1,5 +1,3 @@
-# null
-
-# 2.1.2. Unterverzeichnis ‚import’
+# Unterverzeichnis ‚import’
 
 Innerhalb des Verzeichnisses `import` liegen je nach individueller Goobi-Installation unterschiedliche Daten größtenteils temporär vor. Import-Plugins verwenden dieses Verzeichnis beispielsweise, um Metadaten sowie zugehörige digitale Inhalte für das Anlegen von Vorgängen einzuspielen. Die jeweiligen Import-Plugins sind dabei ebenso für das Löschen nicht mehr benötigter Dateien verantwortlich.

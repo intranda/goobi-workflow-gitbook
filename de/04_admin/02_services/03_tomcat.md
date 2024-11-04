@@ -1,10 +1,8 @@
 # Servlet Container Apache Tomcat
 
-## **Allgemein**
+## Allgemein
 
 Goobi ist eine webbasierte Java Applikation. Damit diese im Webbrowser aufrufbar ist, muss der Java Code übersetzt werden. Hierfür ist ein Servlet Container zuständig. Beispiele für Servlet Container sind:
-
-_**Servlet Container**_
 
 | Servlet Container | Projekt-URL |
 | :--- | :--- |
@@ -14,7 +12,7 @@ _**Servlet Container**_
 
 Üblicherweise wird in einem `Apache Tomcat` installiert. Dieser wird aus den Standardrepositories des Betriebssystems installiert, sofern diese die Version 7 enthalten. Ist das nicht der Fall, wird der `Apache Tomcat` von Hand installiert und gepflegt.
 
-## **Beispiel: Ubuntu Linux 14.04 LTS**
+## Beispiel: Ubuntu Linux 14.04 LTS
 
 Apache Tomcat in der Version 7 wird unter Ubuntu Linux 14.04 LTS aus den Standardrepositories mit dem folgenden Befehl installiert:
 

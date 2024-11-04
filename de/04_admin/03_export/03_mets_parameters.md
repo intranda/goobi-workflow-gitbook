@@ -2,7 +2,7 @@
 
 Die folgende Abbildung zeigt den Reiter `Mets-Parameter` aus den Goobi Projekteinstellungen:
 
-![Projektkonfiguration für METS-Parameter](../../.gitbook/assets/30-80d.png)
+![Projektkonfiguration für METS-Parameter](30-80d.png)
 
 Die hier aufgezeigten Konfigurationseinstellungen bedeuten das folgende:
 

@@ -31,7 +31,7 @@
   * [Metadatenbearbeitung](02_users/03_usecases/05_metadata/05_metadata.md)
   * [Export in das DMS](02_users/03_usecases/06_export/06_export.md)
 * [Metadateneditor](02_users/04_metadata_editor/04_metadata_editor.md)
-  * [null](02_users/04_metadata_editor/01_user_interface/01_user_interface.md)
+  * [Oberfläche](02_users/04_metadata_editor/01_user_interface/01_user_interface.md)
     * [Strukturbaum](02_users/04_metadata_editor/01_user_interface/01_structure/01_structure.md)
     * [Seitenanzeige](02_users/04_metadata_editor/01_user_interface/02_image_view/02_image_view.md)
     * [Menüoptionen](02_users/04_metadata_editor/01_user_interface/03_menu/03_menu.md)
@@ -49,6 +49,9 @@
     * [Serverseitiges importieren](02_users/04_metadata_editor/03_check/05_serverside_import/05_serverside_import.md)
   * [OCR Ergebnisse bearbeiten](02_users/04_metadata_editor/04_ocr/04_ocr.md)
   * [Übersicht über die Tastenkombinationen](02_users/04_metadata_editor/05_shortcuts/05_shortcuts.md)
+
+## Verwaltung <a href="#manager" id="manager"></a>
+
 * [Die Verwaltung von Goobi](03_manager/03_manager.md)
 * [Aufbau der erweiterten Nutzeroberfläche](03_manager/01_user_interface/01_user_interface.md)
 * [Regelsätze](03_manager/02_rulesets/02_rulesets.md)
@@ -62,11 +65,14 @@
   * [GoobiScript](03_manager/06_processes/04_goobiscript/04_goobiscript.md)
 * [Variablensystem](03_manager/07_variables/07_variables.md)
 * [Harvester](03_manager/08_harvester/08_harvester.md)
+
+## Administration <a href="#admin" id="admin"></a>
+
 * [Die Administration von Goobi](04_admin/04_admin.md)
 * [Dateisystem](04_admin/01_filesystem/01_filesystem.md)
   * [Globale Verzeichnisstruktur](04_admin/01_filesystem/01_folder_structure/01_folder_structure.md)
     * [Unterverzeichnis ‚config’](04_admin/01_filesystem/01_folder_structure/01_config/01_config.md)
-    * [null](04_admin/01_filesystem/01_folder_structure/02_import/02_import.md)
+    * [Unterverzeichnis ‚import’](04_admin/01_filesystem/01_folder_structure/02_import/02_import.md)
     * [Unterverzeichnis ‚metadata’](04_admin/01_filesystem/01_folder_structure/03_metadata/01.md)
     * [3D Objekte](04_admin/01_filesystem/01_folder_structure/03_metadata/02_3d.md)
     * [Unterverzeichnis ‚plugins’](04_admin/01_filesystem/01_folder_structure/04_plugins/04_plugins.md)
@@ -80,7 +86,7 @@
 * [Datenbank MySQL](04_admin/02_services/02_mysql.md)
 * [Servlet Container Apache Tomcat](04_admin/02_services/03_tomcat.md)
 * [Authentifizierung der Nutzer mittels LDAP](04_admin/02_services/04_ldap.md)
-* [File system access using Samba](04_admin/02_services/05_samba.md)
+* [Dateisystemzugriff mittels Samba](04_admin/02_services/05_samba.md)
 * [Export in digitale Bibliotheken](04_admin/03_export/01_index.md)
 * [Technische Daten](04_admin/03_export/02_technical_data.md)
 * [Mets Parameter](04_admin/03_export/03_mets_parameters.md)

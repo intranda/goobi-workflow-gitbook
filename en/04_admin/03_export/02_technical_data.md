@@ -2,7 +2,7 @@
 
 The following screenshot shows the `Technical data` tab from Goobi’s project settings:
 
-![Technical project configuration data](../../.gitbook/assets/30-79e.png)
+![Technical project configuration data](30-79e.png)
 
 The configuration settings are explained below:
 

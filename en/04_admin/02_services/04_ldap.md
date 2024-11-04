@@ -46,7 +46,7 @@ ldap_use=true
 <!---
 Dieses Bildschirmfoto ist veraltet und kann durch die anderen vier Bilder (siehe Kommentare unten) ersetzt werden.
 Es fehlen auf diesem Bild zwei neuere Einstellungen und ein paar Details entsprechen nicht mehr der heutigen Ansicht.
-![Configuration of LDAP groups](../../.gitbook/assets/30-60e.png)
+![Configuration of LDAP groups](30-60e.png)
 -->
 
 LDAP groups can be set up in Goobi in the 'Administration' -> 'Authentication' section. A list of authentication options that have already been set up is displayed first. To set up an LDAP group, a new authentication must be created.

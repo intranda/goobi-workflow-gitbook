@@ -1,10 +1,8 @@
 # Apache Tomcat servlet container
 
-## **General**
+## General
 
 Goobi is a web-based Java application. The Java code needs to be translated to ensure that Goobi can be called from your web browser. This job is done by a servlet container. Some examples are given below:
-
-_**Servlet Container**_
 
 | Servlet Container | Project-URL |
 | :--- | :--- |
@@ -14,7 +12,7 @@ _**Servlet Container**_
 
 Goobi is usually installed in an `Apache Tomcat`. This servlet container is installed from the operating system’s standard repositories. However, if the standard repositories do not contain version 7, `Apache Tomcat` is installed and maintained manually.
 
-## **Example: Ubuntu Linux 14.04 LTS**
+## Example: Ubuntu Linux 14.04 LTS
 
 If you are using Ubuntu Linux 14.04 LTS, you need to use the following command to install Apache Tomcat \(version 7\) from the standard repositories:
 
