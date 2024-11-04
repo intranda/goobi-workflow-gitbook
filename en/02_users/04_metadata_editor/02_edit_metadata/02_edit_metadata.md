@@ -1,0 +1,3 @@
+# Metadata indexing
+
+The main area of the Metadata Editor also contains a navigation bar to perform a range of steps during metadata indexing. Selecting `Pagination`, `Structure data`, `Metadata` and `File replacement` allows you to switch between the individual editing modes in the Metadata Editor. Each of these modes is explained in greater detail below and should be performed in the specified order.

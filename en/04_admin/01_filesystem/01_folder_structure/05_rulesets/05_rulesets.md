@@ -1,0 +1,3 @@
+# ‘rulesets’ sub-directory
+
+Within Goobi, the UGH class library is used to process metadata, map PICA imports and generate METS files. In order to manage the huge variety of configuration options, UGH uses a mechanism known as rulesets. The `rulesets` directory is the central storage location for these rulesets. It allows you to make individual configurations available for different projects and types of publication.

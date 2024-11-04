@@ -1,0 +1,7 @@
+# Structuring
+
+When you have completed the task of pagination, the next step in the workflow involves structuring. 
+
+Working again in the Metadata Editor, the aim is to identify and record all the relevant structure elements of the material in a tree-like list. In this step of the workflow, all the structure elements to be indexed for that source material are marked using as precise a descriptor as possible and allocated to the corresponding structure element within the hierarchy. By way of example, for a monograph this can mean that several chapters, a foreword, an afterword, an index and other structure elements can be added under the structure element `Monograph`. Further sub-elements can then be added under these structure elements and so on. In fact, the Metadata Editor allows you to create a hierarchy of elements with as many levels as you wish, including sub-chapters within chapters.
+
+To start the task of organising the structure elements using the Metadata Editor, first select the `Structure data` option from the navigation bar. Goobi will display an overview of the available options. It is important to remember that all changes to the structure data depend on which structure element is currently selected in the structure tree on the left \(highlighted in bold\).

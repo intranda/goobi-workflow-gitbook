@@ -1,0 +1,3 @@
+# File system
+
+As a workflow management application for the library environment, Goobi has to be able to deal with a wide range of specific configurations and project-specific requirements. To this end, it has been designed in line with established conventions. These cover individual directory structures and the way Goobi uses these structures in different areas of the application. This section outlines the directory structures that have proven most effective and explains how external storage is integrated into the system.

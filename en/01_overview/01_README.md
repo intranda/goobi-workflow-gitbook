@@ -5,8 +5,6 @@ description: >-
 
 # Goobi workflow Handbook
 
-# Goobi workflow Handbook
-
 ## About this manual
 
 Welcome to the Goobi Manual. This is the official documentation produced by intranda GmbH as the core developer of the open-source workflow management application known as Goobi. The entire body of documentation is divided into various sections. It is based on the experience we have gained over several years, both in the development of Goobi and during the installation and support process, involving numerous productive systems at establishments in various European countries. As well as providing answers to the questions most frequently asked by users, the manual explains typical scenarios in which Goobi can be used for different projects and examines the range of approaches adopted by different institutions.
