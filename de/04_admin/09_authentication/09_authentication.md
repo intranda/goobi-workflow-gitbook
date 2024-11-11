@@ -6,4 +6,4 @@ Im Folgenden sollen einige der typischen Authentifizierungsmöglichkeiten von Go
 
 {% page-ref page="02_http_header/02_http_header.md" %}
 
-[Authentifizierung über OpenID Connect](03_openID/03_openID.md)
+{% page-ref page="03_openID/03_openID.md" %}

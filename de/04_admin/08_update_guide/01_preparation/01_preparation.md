@@ -163,4 +163,4 @@ Die `LayoutWizzard.jar` in `/opt/digiverso/{goobi,itm}/lib/` müssen gleich sein
 
 Nachdem alle Vorarbeiten durchgeführt wurden, kann das eigentliche Update erfolgen. Dieses ist in einzelnen Schritten detailliert hier erläutert:
 
-[Updateschritte](../02_update_steps/02_update_steps.md)
+{% page-ref page="../02_update_steps/02_update_steps.md" %}

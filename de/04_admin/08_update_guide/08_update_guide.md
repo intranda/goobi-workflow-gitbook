@@ -6,4 +6,4 @@ An dieser Stelle ist detailliert dokumentiert, wie die Updates von Goobi workflo
 
 Nach der erfolgreichen Durchführung der Vorarbeiten kann das eigentliche Update erfolgen. Dieses ist in dieser Dokumentation so beschrieben, dass der Goobi workflow ausgehend von der installierten Version Schritt für Schritt auf die jeweils aktuellste Version gebracht werden kann.
 
-[Updateschritte](02_update_steps/02_update_steps.md)
+{% page-ref page="02_update_steps/02_update_steps.md" %}

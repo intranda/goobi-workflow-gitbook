@@ -6,4 +6,4 @@ Some of the typical authentication options offered by Goobi workflow are documen
 
 {% page-ref page="02_http_header/02_http_header.md" %}
 
-[Authentication via OpenID Connect](03_openID/03_openID.md)
+{% page-ref page="03_openID/03_openID.md" %}
