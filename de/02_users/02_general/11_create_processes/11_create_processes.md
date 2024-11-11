@@ -20,7 +20,7 @@ Es öffnet sich somit eine neue Maske zur Erfassung der bibliographischen Daten 
 
 ![Einen neuen Vorgang in Goobi anlegen](screen2_de.png)
 
-In diesem Handbuch soll auf die am meisten verbreitete Weise eingegangen werden, wie Vorgänge in Goobi mittels der Übernahme von Metadaten aus einem Bibliothekskatalog angelegt werden. Weitere Informationen oder alternative Wege, um einen oder mehrere Vorgänge gleichzeitig in Goobi anlegen zu lassen, werden in dem [Abschnitt Goobi Management](../../manager/manager.md) beschrieben.  
+In diesem Handbuch soll auf die am meisten verbreitete Weise eingegangen werden, wie Vorgänge in Goobi mittels der Übernahme von Metadaten aus einem Bibliothekskatalog angelegt werden. Weitere Informationen oder alternative Wege, um einen oder mehrere Vorgänge gleichzeitig in Goobi anlegen zu lassen, werden in dem {% page-ref page="../../../03_manager/03_manager.md" %} beschrieben.  
 Zur Übernahme von bibliographischen Daten aus einem der konfigurierten Bibliothekskataloge (Pica, Aleph, Z39.50 etc.) wählen Sie den gewünschten Katalog in der Auswahlliste `Suche im OPAC` aus und tragen dahinter den entsprechenden Identifier ein. Nach der Eingabe des Identifiers klicken Sie auf die zugehörige Schaltfläche `Übernehmen`. Anschließend sehen Sie, wie die vorhandenen Felder automatisch durch Goobi ausgefüllt wurden und der Publikationstyp korrekt eingestellt ist.
 
 ![Bibliographische Daten, die automatisch aus dem Bibliothekskatalog übernommen wurden](screen3_de.png)

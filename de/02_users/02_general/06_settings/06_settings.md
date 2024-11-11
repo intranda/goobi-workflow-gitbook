@@ -26,9 +26,9 @@ Hier lassen sich nun diejenigen Aufgaben auswählen, über die der Nutzer im Fal
 {% hint style="info" %}
 Um die Mail-Benachrichtigungen zu aktivieren und mit allen Funktionalitäten nutzen zu können, müssen eventuell noch Änderungen an der Goobi-Konfiguration vorgenommen werden:
 
-1. Die Konfigurationsdatei [goobi_mail.xml](../../admin/7/7.md) anlegen und anpassen
-2. Ein `jwtSecret` in der Datei `goobi_config.properties` setzen
-3. Den Mail-Deaktivierungs-Endpoint in der  Datei [goobi_rest.xml](broken-reference) freischalten
+1. Die Konfigurationsdatei {% page-ref page="../../../04_admin/06_config_files/05_goobi_mail.xml/05_goobi_mail.xml.md" %} anlegen und anpassen
+2. Ein `jwtSecret` in der Datei {% page-ref page="../../../04_admin/06_config_files/02_goobi_config.properties/02_goobi_config.properties.md" %} setzen
+3. Den Mail-Deaktivierungs-Endpoint in der  Datei {% page-ref page="../../../04_admin/06_config_files/12_goobi_rest.xml/12_goobi_rest.xml.md" %} freischalten
 {% endhint %}
 
 Verfügt der Nutzer über das Benutzerrecht `Benachrichtigungen bei allen Statusänderungen`, werden sämtliche Aufgaben angezeigt statt nur derjenigen, in denen man selbst Mitglied ist. Darüber hinaus lassen sich in diesem Falle auch Benachrichtigungen für weitere Statusänderungen auswählen, wie z.B. für Fehlerfälle oder den Abschluss der Bearbeitung.

@@ -4,7 +4,7 @@ The methods used by scan operators working with Goobi on a daily basis do not va
 
 !['My tasks' for a scan operator](screen1_en.png)
 
-This list of tasks contains all the workflow steps that the scan operator is authorised to perform as a member of one or more projects and user groups. The symbols in the `Actions` columns indicate the current status of the workflow steps in those rows. As described above in [section My tasks](../2/2.md), each user can see immediately which tasks are still open and waiting to be processed and which are already `in progress`, i.e. being processed by that user or another user with the same level of authorisation and qualifications. The symbols in the column `Priority` indicate error messages or priorities.
+This list of tasks contains all the workflow steps that the scan operator is authorised to perform as a member of one or more projects and user groups. The symbols in the `Actions` columns indicate the current status of the workflow steps in those rows. As described above in {% page-ref page="../../02_general/08_tasks/08_tasks.md" %}, each user can see immediately which tasks are still open and waiting to be processed and which are already `in progress`, i.e. being processed by that user or another user with the same level of authorisation and qualifications. The symbols in the column `Priority` indicate error messages or priorities.
 
 From an individual user’s perspective, working with Goobi on a daily basis generally involves selecting a task from the list of those offered and then clicking on the corresponding `Actions` button at the end of the row to view full details of that task.
 
@@ -37,6 +37,6 @@ Once a task has been completed, i.e. when all the required pages of the physical
 
 If, after accepting and starting a task, you decide that you do not want to work on the selected task, you can simply return it. Goobi will then reset that workflow step to its original `open` status. It is now available to any other authorised users or even to the same scan operator at a later stage. This arrangement can be useful if a task that has been selected involves too much work and cannot be completed, for example, on the last day before that user’s holiday, as it would otherwise remain unavailable to other users for a relatively long period.
 
-While you are working on a task, if you notice an error that has been made at an earlier stage of the workflow that needs to be rectified before you can complete your work, you can send an error message to the work station responsible for that earlier task. This tends to be very rare in the case of scan operators. A description of such error messages can be found in [section Quality control](3.2.md).
+While you are working on a task, if you notice an error that has been made at an earlier stage of the workflow that needs to be rectified before you can complete your work, you can send an error message to the work station responsible for that earlier task. This tends to be very rare in the case of scan operators. A description of such error messages can be found in {% page-ref page="../02_qa/02_qa.md" %}.
 
 Once you have closed a task, you will return automatically to the `My tasks` list. The completed task will no longer appear in the list. You can now continue with the next task from your list.
