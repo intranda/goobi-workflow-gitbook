@@ -2,7 +2,7 @@
 
 Auf der hier dargestellten Seite können die Details und Plugins für Aufgaben konfiguriert werden. Die Seite unterscheidet sich nicht wesentlich zwischen den Aufgaben von Produktionsvorlagen und denen von bereits existierenden Vorgängen. Unterschiede sind gegebenenfalls gekennzeichnet.
 
-![Auf dieser Seite können grundlegende Einstellungen und Plugins für Aufgaben konfiguriert werden.](taskDetails_de.png)
+![Auf dieser Seite können grundlegende Einstellungen und Plugins für Aufgaben konfiguriert werden.](screen_de.png)
 
 ## Titel
 
@@ -169,7 +169,7 @@ Die aus der Tabelle eingelesenen Skript-Zeilen (aber nicht die Skript-Dateien se
 
 Ein paar Beispiele für Skripte:
 
-```
+```bash
 /opt/digiverso/goobi/scripts/copyfiles.sh
 bash /opt/digiverso/goobi/scripts/myExampleScript.sh --action convert
 python /opt/digiverso/goobi/scripts/doAnything.py
@@ -234,7 +234,7 @@ Im nächsten Schritt wird die **HTTP URL** festgelegt. Diese setzt sich zusammen
 
 Einige Beispiele für API-Anfrage-URLs:
 
-```
+```text
 http://localhost:8080/api/endpoint/delete?id=20&project=2
 http://192.168.178.21:8888/api/endpoint/list
 https://goobi.example.org/api/endpoint/list?project=1

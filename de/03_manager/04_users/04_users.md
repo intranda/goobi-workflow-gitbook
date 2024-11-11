@@ -6,9 +6,9 @@ In der Spalte `Aktionen` besteht die Möglichkeit, einen einzelnen Benutzer zu b
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![ruleset\_02.png](ruleset_02.png) | Neuen Benutzer anlegen |
-| ![ruleset\_01.png](ruleset_01.png) | Bestehenden Benutzer bearbeiten |
-| ![ruleset\_03.png](ruleset_03.png) | Wechsel in die Rolle des ausgewählten Benutzers |
+| ![icon_new.png](icon_new.png) | Neuen Benutzer anlegen |
+| ![icon_edit.png](icon_edit.png) | Bestehenden Benutzer bearbeiten |
+| ![icon_user.png](icon_user.png) | Wechsel in die Rolle des ausgewählten Benutzers |
 
 Klicken Sie für diesen Rollenwechsel einfach auf das Icon `Benutzerprofil laden` in der Spalte `Aktionen`. Dadurch ändern Sie als Administrator Ihre Rechte sowie Ihre Rolle zu derjenigen der ausgewählten Person. Auf diese Weise ist es Ihnen möglich, für Testzwecke zu prüfen, wie sich Goobi für einen einzelnen bestimmten Nutzer verhält. Dies könnte insbesondere dann sinnvoll sein, wenn einzelne Benutzer über Probleme berichten, die sich nicht nachvollziehen lassen. Der Wechsel in die Rolle und die Rechte eines spezifischen Benutzers erlaubt Ihnen, die Oberflächen in exakt der gleichen Weise vorzufinden wie der Benutzer sie sieht, ohne dass dieser Ihnen seine Zugriffsdaten, insbesondere sein Passwort, nennen muss.
 
@@ -16,21 +16,21 @@ Oberhalb der Auflistung aller Benutzer bietet Goobi Ihnen die Möglichkeit, die 
 
 Der Filter oberhalb der Tabelle erlaubt Ihnen, auch in umfangreichen Benutzerauflistungen einen bestimmten Benutzer schnell aufzufinden. Geben Sie hierzu einfach einen Teil des Vor- oder Nachnamens ein und bestätigen Sie Ihre Eingabe anschließend mit der Eingabetaste.
 
-![Auflistung der in Goobi eingetragenen Benutzer](30-61d.png)
+![Auflistung der in Goobi eingetragenen Benutzer](screen1_de.png)
 
 Möchten Sie einen neuen Benutzer in Goobi hinzufügen, klicken Sie auf den Link `Neuen Benutzer anlegen` unterhalb der tabellarischen Auflistung. Möchten Sie einen bereits vorhandenen Benutzer von Goobi bearbeiten, so klicken Sie auf das erste Icon der Spalte `Aktionen` des gewünschten Benutzers.
 
-![Bearbeitung von Benutzerdetails](30-62d.png)
+![Bearbeitung von Benutzerdetails](screen2_de.png)
 
 In der Maske für die Bearbeitung eines einzelnen Benutzers haben Sie die Möglichkeit sämtliche Details der gewünschten Person zu bearbeiten. Neben dem `Nachnamen`, dem `Vornamen` und dem `Standort` vergeben Sie an dieser Stelle ebenfalls einen `Login`, der in Goobi verwendet werden soll, sowie ein `Passwort`.
 
 Sofern Goobi in der Hauptkonfiguration so eingestellt wurde, dass Goobi die Benutzer gegen einen konfigurierten LDAP authentifiziert, muss für jeden einzelnen Benutzer hier festgelegt werden, welcher LDAP-Server für die Authentifizierung verwendet werden soll.
 
-In dem Eingabefeld für die Sprache der Metadaten kann als Freitext ein Sprachcode verwendet werden. Bitte beachten Sie hierfür, dass der verwendete Sprachcode exakt mit demjenigen übereinstimmen muss, der innerhalb des Regelsatzes definiert wurde, mit dem der Benutzer im Goobi-METS-Editor arbeiten wird. Im Fall der folgenden Abbildung muss entsprechend in den Regelsätzen eine Lokalisierung der Metadaten- und Strukturdatenbezeichnungen \(`language`\) für die Sprache Englisch mit dem Sprachcode `en` vorhanden sein. Wenn das Feld leer gelassen wird, wird im Metadateneditor die Sprache des Browsers benutzt.
+In dem Eingabefeld für die Sprache der Metadaten kann als Freitext ein Sprachcode verwendet werden. Bitte beachten Sie hierfür, dass der verwendete Sprachcode exakt mit demjenigen übereinstimmen muss, der innerhalb des Regelsatzes definiert wurde, mit dem der Benutzer im Goobi-METS-Editor arbeiten wird. Im Fall der folgenden Abbildung muss entsprechend in den Regelsätzen eine Lokalisierung der Metadaten- und Strukturdatenbezeichnungen (`language`) für die Sprache Englisch mit dem Sprachcode `en` vorhanden sein. Wenn das Feld leer gelassen wird, wird im Metadateneditor die Sprache des Browsers benutzt.
 
 **Lokalisierung des Metadatums 'logicalPageNumber' für mehrere Sprachen innerhalb eines Regelsatzes**
 
-```markup
+```xml
 <MetadataType>
     <Name>logicalPageNumber</Name>
     <language name="de">logische Seitenzahl (gedruckte Seitenzahl)</language>
@@ -51,11 +51,11 @@ Durch das Verschieben mehrerer Verzeichnisse zugehöriger Aufgaben in das Massen
 
 Mit seinem granularen Rechtesystem gewährleistet Goobi, dass jede Person nicht nur in einzelnen Projekten Mitglied ist, sondern auch, dass jeder Nutzer in unterschiedlichen Rollen in Goobi unterwegs sein kann. Dabei kann jede Person zugleich mehrere Rollen wahrnehmen. Rollen lassen sich in diesem Zusammenhang auch verstehen als Qualifikation oder Fertigkeit. Welche Rollen in Goobi definiert wurden, lässt sich im Bereich der Benutzergruppen festlegen. Klicken Sie für den ausgewählten Benutzer einfach auf den Button `Benutzergruppen hinzufügen`, um dem Benutzer weitere Rollen zuzuweisen.
 
-![Hinzuf&#xFC;gen von Benutzergruppen zur ausgew&#xE4;hlten Person](30-63d.png)
+![Hinzufügen von Benutzergruppen zur ausgewählten Person](screen3_de.png)
 
 Wählen Sie in dem geöffneten Dialogfenster nun all diejenigen Benutzergruppen aus, die sie dem Benutzer zuordnen möchten, und klicken Sie auf das entsprechende Icon, um die Auswahl zu übernehmen. Nachfolgend sehen Sie, dass der Benutzer diesen Benutzergruppen zugewiesen wurde. In gleicher Weise verfahren Sie ebenfalls mit den Projekten, in denen der aktuell ausgewählte Benutzer Mitglied sein soll.
 
-![Hinzuf&#xFC;gen von Projekten zu einem Benutzer](30-64d.png)
+![Hinzufügen von Projekten zu einem Benutzer](screen4_de.png)
 
 Möchten Sie die Person aus einer einzelnen Benutzergruppe oder Projekt entfernen, so klicken Sie einfach auf das Symbol zum Löschen neben der jeweiligen Benutzergruppe oder dem Projekt. Zur dauerhaften Übernahme der vorgenommenen Einstellungen für den Benutzer klicken Sie anschließend auf den Schaltknopf `Speichern`.
 

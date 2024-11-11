@@ -26,7 +26,7 @@ Static variables are variables with a fixed name and a defined value.
 
 | Variable: | {processtitle} |
 | :--- | :--- |
-| Sample value: | kleiuniv\_PPN517154005 |
+| Sample value: | kleiuniv_PPN517154005 |
 | Meaning: | This is the process title. |
 
 ### Static variable: {stepid}
@@ -68,14 +68,14 @@ Static variables are variables with a fixed name and a defined value.
 
 | Variable: | {tifpath} |
 | :--- | :--- |
-| Sample value: | /opt/digiverso/goobi/metadata/27/images/kleiuniv\_PPN517154005\_media |
+| Sample value: | /opt/digiverso/goobi/metadata/27/images/kleiuniv_PPN517154005_media |
 | Meaning: | The absolute path to the media folder for the process. This is a subfolder of {imagepath}. It contains the optimised digital images. This folder is usually exported at the end of the workflow. |
 
 ### Static variable: {origpath}
 
 | Variable: | {origpath} |
 | :--- | :--- |
-| Sample value: | /opt/digiverso/goobi/metadata/27/images/master\_kleiuniv\_PPN517154005\_media |
+| Sample value: | /opt/digiverso/goobi/metadata/27/images/master_kleiuniv_PPN517154005_media |
 | Meaning: | The absolute path to the media folder for the process. This is a subfolder of {imagepath}. It contains the scanned images. Derivatives for other folders are usually generated from this folder. |
 
 ### Static variable: {metaFile}
@@ -89,21 +89,21 @@ Static variables are variables with a fixed name and a defined value.
 
 | Variable: | {tifurl} |
 | :--- | :--- |
-| Sample value: | [file:///opt/digiverso/goobi/metadata/27/images/kleiuniv\_PPN517154005\_media](file:///opt/digiverso/goobi/metadata/27/images/kleiuniv_PPN517154005_media) |
+| Sample value: | [file:///opt/digiverso/goobi/metadata/27/images/kleiuniv_PPN517154005_media](file:///opt/digiverso/goobi/metadata/27/images/kleiuniv_PPN517154005_media) |
 | Meaning: | The path for {tifpath} as a valid URL. |
 
 ### Static variable: {origurl}
 
 | Variable: | {origurl} |
 | :--- | :--- |
-| Sample value: | [file:///opt/digiverso/goobi/metadata/27/images/master\_kleiuniv\_PPN517154005\_media](file:///opt/digiverso/goobi/metadata/27/images/master_kleiuniv_PPN517154005_media) |
+| Sample value: | [file:///opt/digiverso/goobi/metadata/27/images/master_kleiuniv_PPN517154005_media](file:///opt/digiverso/goobi/metadata/27/images/master_kleiuniv_PPN517154005_media) |
 | Meaning: | The path for {origpath} as a valid URL. |
 
 ### Static variable: {sourcepath}
 
 | Variable: | {sourcepath} |
 | :--- | :--- |
-| Sample value: | /opt/digiverso/goobi/metadata/27/images/kleiuniv\_PPN517154005\_source/ |
+| Sample value: | /opt/digiverso/goobi/metadata/27/images/kleiuniv_PPN517154005_source/ |
 | Meaning: | The path to the source folder for the process. This folder can be used to store files that are to be included in exports to the Goobi viewer. |
 
 ### Static variable: {projectid}
@@ -131,14 +131,14 @@ Static variables are variables with a fixed name and a defined value.
 
 | Variable: | {iiifMediaFolder} |
 | :--- | :--- |
-| Sample value: | "[http://example.com/goobi/api/process/image/12345/schudiss\_618299084\_media/00000001.tif/full/max/0/default.jpg?jwt=1234567890](http://example.com/goobi/api/process/image/12345/schudiss_618299084_media/00000001.tif/full/max/0/default.jpg?jwt=1234567890)", "[http://example.com/goobi/api/process/image/12345/schudiss\_618299084\_media/00000002.tif/full/max/0/default.jpg?jwt=0987654321](http://example.com/goobi/api/process/image/12345/schudiss_618299084_media/00000002.tif/full/max/0/default.jpg?jwt=0987654321)", ... |
+| Sample value: | "[http://example.com/goobi/api/process/image/12345/schudiss_618299084_media/00000001.tif/full/max/0/default.jpg?jwt=1234567890](http://example.com/goobi/api/process/image/12345/schudiss_618299084_media/00000001.tif/full/max/0/default.jpg?jwt=1234567890)", "[http://example.com/goobi/api/process/image/12345/schudiss_618299084_media/00000002.tif/full/max/0/default.jpg?jwt=0987654321](http://example.com/goobi/api/process/image/12345/schudiss_618299084_media/00000002.tif/full/max/0/default.jpg?jwt=0987654321)", ... |
 | Meaning: | Listing of IIIF URLs to all images from the `media` directory of a process |
 
 ### Static variable: {iiifMasterFolder}
 
 | Variable: | {iiifMasterFolder} |
 | :--- | :--- |
-| Sample value: | "[http://example.com/goobi/api/process/image/12345/schudiss\_618299084\_master/00000001.tif/full/max/0/default.jpg?jwt=1234567890](http://example.com/goobi/api/process/image/12345/schudiss_618299084_master/00000001.tif/full/max/0/default.jpg?jwt=1234567890)", "[http://example.com/goobi/api/process/image/12345/schudiss\_618299084\_master/00000002.tif/full/max/0/default.jpg?jwt=0987654321](http://example.com/goobi/api/process/image/12345/schudiss_618299084_master/00000002.tif/full/max/0/default.jpg?jwt=0987654321)", ... |
+| Sample value: | "[http://example.com/goobi/api/process/image/12345/schudiss_618299084_master/00000001.tif/full/max/0/default.jpg?jwt=1234567890](http://example.com/goobi/api/process/image/12345/schudiss_618299084_master/00000001.tif/full/max/0/default.jpg?jwt=1234567890)", "[http://example.com/goobi/api/process/image/12345/schudiss_618299084_master/00000002.tif/full/max/0/default.jpg?jwt=0987654321](http://example.com/goobi/api/process/image/12345/schudiss_618299084_master/00000002.tif/full/max/0/default.jpg?jwt=0987654321)", ... |
 | Meaning: | Listing of IIIF URLs to all images from the `master` directory of a process |
 
 ## Dynamic variables
@@ -193,11 +193,11 @@ As well as static variables, there is a range of dynamic variables that can be u
 | Sample value: | 12 |
 | Meaning: | This variable allows you to use the value of an item of metadata located in the first sub-element of the main element. This is particularly useful in the case of multi-volume or periodical structures. |
 
-### Dynamic variable: {db\_meta.NAME}
+### Dynamic variable: {db_meta.NAME}
 
-| Variable: | {db\_meta.NAME} |
+| Variable: | {db_meta.NAME} |
 | :--- | :--- |
-| Example: | {db\_meta.DocStruct} |
+| Example: | {db_meta.DocStruct} |
 | Sample value: | Monograph |
 | Meaning: | With this variable the value of a metadata can be used. This is not read from the METS file itself in this case, but instead comes from the cached version from the database. |
 

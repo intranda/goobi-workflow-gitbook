@@ -4,11 +4,11 @@ When you apply an action to a group of processes, you also have an option to run
 
 For every GoobiScript, you need to enter the name of the script you wish to run as well as the corresponding parameters. These parameters are shown when you click on the script in the list. Replace the parameters shown as examples with your desired settings.
 
-![List of available Goobi scripts](goobiScript2_en.png)
+![List of available Goobi scripts](screen1_en.png)
 
 After completing the GoobiScript, you can now apply it to selected hits or the entire hit list. Before the execution, however, a security query appears in which the number of operations to which the GoobiScript should be applied must first be confirmed again.
 
-![Security prompt before executing GoobiScript](goobiScript3_en.png)
+![Security prompt before executing GoobiScript](screen2_en.png)
 
 {% hint style="info" %}
 Please note that you may not have access to all the GoobiScripts that Goobi offers. Some of the GoobiScripts may be hidden. Your user group may also not have been granted access to all GoobiScripts. A more detailed explanation of how to assign permissions to GoobiScripts can be found here:
@@ -108,11 +108,11 @@ steptitle: Upload images
 plugin: intranda_step_fileUpload
 ```
 
-![Multiple GoobiScripts in compact form before submission](goobiScript4_en.png)
+![Multiple GoobiScripts in compact form before submission](screen3_en.png)
 
 The processing of such multiple GoobiScripts takes place after sending in the order of the naming in each case over all affected processes. Related to this example this means, if 3 processes are concerned the following processing:
 
-![Processing order of the GoobiScripts](goobiScript5_en.png)
+![Processing order of the GoobiScripts](screen4_en.png)
 
 {% hint style="info" %}
 Please avoid starting additional GoobiScripts unless other GoobiScripts are already being processed. Otherwise, the processing of Goobi scripts may be interrupted. This limitation will be fixed in future versions of Goobi workflow.
@@ -151,11 +151,11 @@ The GoobiScript `importFromFileSystem` imports existing image sets from a define
 
 
 ### GoobiScript: setRuleset
-The GoobiScript `setRuleset` allows you to make a central change to the Goobi ruleset for a group of processes. This could be particularly important after detailed editing and testing of a ruleset \(for safety reasons this is performed separately in a newly created ruleset\), if you then wish to apply the new ruleset to the processes. For the parameter entitled `ruleset`, you need to specify the name of the ruleset using the name as it appears in the ruleset list in Goobi. The newly assigned ruleset will be entered when you run the GoobiScript, regardless of which ruleset is currently in place for the individual processes being changed.
+The GoobiScript `setRuleset` allows you to make a central change to the Goobi ruleset for a group of processes. This could be particularly important after detailed editing and testing of a ruleset (for safety reasons this is performed separately in a newly created ruleset), if you then wish to apply the new ruleset to the processes. For the parameter entitled `ruleset`, you need to specify the name of the ruleset using the name as it appears in the ruleset list in Goobi. The newly assigned ruleset will be entered when you run the GoobiScript, regardless of which ruleset is currently in place for the individual processes being changed.
 
 
 ### GoobiScript: deleteStep
-You can run the GoobiScript `deleteStep` if you want to delete a specific step from the workflow for a group of processes. Running the script will delete the workflow step \(specified by its full name in the parameter `steptitle`\) from the list of selected processes. Please note that this GoobiScript will also delete any production-related data being stored for that particular workflow step \(e.g. project staff, processing date, status\).
+You can run the GoobiScript `deleteStep` if you want to delete a specific step from the workflow for a group of processes. Running the script will delete the workflow step (specified by its full name in the parameter `steptitle`) from the list of selected processes. Please note that this GoobiScript will also delete any production-related data being stored for that particular workflow step (e.g. project staff, processing date, status).
 
 
 ### GoobiScript: addStep
@@ -163,7 +163,7 @@ The GoobiScript entitled `addStep` allows you to automatically create a new step
 
 
 ### GoobiScript: addStepAtOtherStepPosition
-The GoobiScript `addStepAtOtherStepPosition` enables the creation of a workflow step with a defined title at a defined position within the workflow where another workflow step is already located. By inserting the new workflow step, all existing workflow steps with this or a subsequent position are moved so that the new workflow step can be inserted at the desired target position. The parameter `newsteptitle` allows you to define the title for the new workflow step to be inserted. The parameter `existingsteptitle` defines the name of the workflow step that determines the target position of the step to be inserted. The parameter `insertionstrategy` defines whether the new step is to be inserted before \(`before`\) or after \(`after`\) the specified existing step.
+The GoobiScript `addStepAtOtherStepPosition` enables the creation of a workflow step with a defined title at a defined position within the workflow where another workflow step is already located. By inserting the new workflow step, all existing workflow steps with this or a subsequent position are moved so that the new workflow step can be inserted at the desired target position. The parameter `newsteptitle` allows you to define the title for the new workflow step to be inserted. The parameter `existingsteptitle` defines the name of the workflow step that determines the target position of the step to be inserted. The parameter `insertionstrategy` defines whether the new step is to be inserted before (`before`) or after (`after`) the specified existing step.
 
 
 ### GoobiScript: setStepStatus
@@ -209,9 +209,9 @@ You can use the Goobi script `setStepProperty` to set individual options for a s
 | `exportdms` | for the property whether the workflow step should be able to perform an export to the presentation system |
 | `batch` | for the property whether the workflow step should be executed together with all other workflow steps in batch mode |
 | `automatic` | for the property whether the workflow step should be executed automatically |
-| `importfileupload` | for the property whether a file upload should be used for the import in this workflow step  \(Please note that this function is no longer used in Goobi\). |
-| `acceptandclose` | for the property whether the workflow step should be accepted directly without action and closed again \(Please note that this function is no longer used in Goobi\) |
-| `acceptmoduleandclose` | for the property whether a module of a work step should be accepted and executed and the workflow step should also be completed immediately.  \(Please note that this function is no longer used in Goobi\). |
+| `importfileupload` | for the property whether a file upload should be used for the import in this workflow step  (Please note that this function is no longer used in Goobi). |
+| `acceptandclose` | for the property whether the workflow step should be accepted directly without action and closed again (Please note that this function is no longer used in Goobi) |
+| `acceptmoduleandclose` | for the property whether a module of a work step should be accepted and executed and the workflow step should also be completed immediately.  (Please note that this function is no longer used in Goobi). |
 | `script` | for the property whether the step should execute a script |
 | `delay` | for the property whether this workflow step is a delay workflow step that should wait a configured time |
 | `updatemetadataindex` | for the property that the internal database index is to be updated in this workflow step |
@@ -235,7 +235,7 @@ If the workflow step contains a number of scripts, you can specify which one you
 
 
 ### GoobiScript: deleteProcess
-As the name suggests, the GoobiScript `deleteProcess` is used to delete processes. You have to use the parameter `contentOnly` \(value `true` or `false`\) to specify whether Goobi should delete only the data from the file system or, additionally, all the information from the database.
+As the name suggests, the GoobiScript `deleteProcess` is used to delete processes. You have to use the parameter `contentOnly` (value `true` or `false`) to specify whether Goobi should delete only the data from the file system or, additionally, all the information from the database.
 
 
 ### GoobiScript: addPluginToStep
@@ -285,11 +285,11 @@ The parameter `position` allows you to specify where the metadata should be foun
 
 | Position | Description |
 | :--- | :--- |
-| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element \(e.g. a monograph\) or, in the case of an anchor record, the sub-element \(e.g. the periodical volume\). |
-| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record \(e.g. a periodical volume or volume\). |
-| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record \(e.g. at the level of a journal or a multi-volume work\). |
-| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object \(e.g. in the volume, in all chapters, title pages, illustrations, etc.\). |
-| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted \(e.g. metadata of the individual pages\). |
+| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element (e.g. a monograph) or, in the case of an anchor record, the sub-element (e.g. the periodical volume). |
+| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record (e.g. a periodical volume or volume). |
+| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record (e.g. at the level of a journal or a multi-volume work). |
+| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object (e.g. in the volume, in all chapters, title pages, illustrations, etc.). |
+| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted (e.g. metadata of the individual pages). |
 
 {% hint style="success" %}
 **Sample calls:**
@@ -329,11 +329,11 @@ The parameter `position` allows you to specify where the metadata should be adde
 
 | Position | Description |
 | :--- | :--- |
-| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element \(e.g. a monograph\) or, in the case of an anchor record, the sub-element \(e.g. the periodical volume\). |
-| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record \(e.g. a periodical volume or volume\). |
-| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record \(e.g. at the level of a journal or a multi-volume work\). |
-| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object \(e.g. in the volume, in all chapters, title pages, illustrations, etc.\). |
-| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted \(e.g. metadata of the individual pages\). |
+| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element (e.g. a monograph) or, in the case of an anchor record, the sub-element (e.g. the periodical volume). |
+| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record (e.g. a periodical volume or volume). |
+| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record (e.g. at the level of a journal or a multi-volume work). |
+| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object (e.g. in the volume, in all chapters, title pages, illustrations, etc.). |
+| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted (e.g. metadata of the individual pages). |
 
 Any authority data can also be added using the `authorityName` and `authorityValue` parameters.
 
@@ -385,11 +385,11 @@ The parameter `position` allows you to specify where the metadata to be replaced
 
 | Position | Description |
 | :--- | :--- |
-| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element \(e.g. a monograph\) or, in the case of an anchor record, the sub-element \(e.g. the periodical volume\). |
-| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record \(e.g. a periodical volume or volume\). |
-| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record \(e.g. at the level of a journal or a multi-volume work\). |
-| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object \(e.g. in the volume, in all chapters, title pages, illustrations, etc.\). |
-| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted \(e.g. metadata of the individual pages\). |
+| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element (e.g. a monograph) or, in the case of an anchor record, the sub-element (e.g. the periodical volume). |
+| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record (e.g. a periodical volume or volume). |
+| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record (e.g. at the level of a journal or a multi-volume work). |
+| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object (e.g. in the volume, in all chapters, title pages, illustrations, etc.). |
+| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted (e.g. metadata of the individual pages). |
 
 Any authority data can also be added or changed using the `authorityName` and `authorityValue` parameters.
 
@@ -452,11 +452,11 @@ The parameter `position` allows you to specify where the metadata should be pres
 
 | Position | Description |
 | :--- | :--- |
-| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element \(e.g. a monograph\) or, in the case of an anchor record, the sub-element \(e.g. the periodical volume\). |
-| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record \(e.g. a periodical volume or volume\). |
-| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record \(e.g. at the level of a journal or a multi-volume work\). |
-| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object \(e.g. in the volume, in all chapters, title pages, illustrations, etc.\). |
-| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted \(e.g. metadata of the individual pages\). |
+| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element (e.g. a monograph) or, in the case of an anchor record, the sub-element (e.g. the periodical volume). |
+| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record (e.g. a periodical volume or volume). |
+| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record (e.g. at the level of a journal or a multi-volume work). |
+| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object (e.g. in the volume, in all chapters, title pages, illustrations, etc.). |
+| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted (e.g. metadata of the individual pages). |
 | `condition` | This parameter can be used optionally to specify a condition for the replacement of metadata. If this parameter is used and the given value is not empty, the replacement is applyed to all data sets that contain the text given here in the previor metadata field. |
 
 {% hint style="success" %}
@@ -502,11 +502,11 @@ The GoobiScript `metadataChangePersonType` changes the role type of a person. Th
 
 | Position | Description |
 | :--- | :--- |
-| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element \(e.g. a monograph\) or, in the case of an anchor record, the sub-element \(e.g. the periodical volume\). |
-| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record \(e.g. a periodical volume or volume\). |
-| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record \(e.g. at the level of a journal or a multi-volume work\). |
-| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object \(e.g. in the volume, in all chapters, title pages, illustrations, etc.\). |
-| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted \(e.g. metadata of the individual pages\). |
+| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element (e.g. a monograph) or, in the case of an anchor record, the sub-element (e.g. the periodical volume). |
+| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record (e.g. a periodical volume or volume). |
+| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record (e.g. at the level of a journal or a multi-volume work). |
+| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object (e.g. in the volume, in all chapters, title pages, illustrations, etc.). |
+| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted (e.g. metadata of the individual pages). |
 
 ### GoobiScript: metadataChangeType
 The GoobiScript `metadataChangeType` changes the type of a metadata. The call requires four parameters. The `oldType` parameter specifies the old type of the metadatum. The `newType` parameter specifies the new type for the metadata. The parameter `ignoreErrors` controls whether, in case of an error, the processing and saving of the METS file should be continued or whether the processing for the object should be aborted. The parameter `type` can be used to control whether the change is to be made to a simple metadata or within a metadata group. The parameter `group` defines the metadata group for which the metadatum is to be changed. The following application scenarios exist:
@@ -519,11 +519,11 @@ The parameter `position` allows you to specify where the metadatum should occur 
 
 | Position | Description |
 | :--- | :--- |
-| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element \(e.g. a monograph\) or, in the case of an anchor record, the sub-element \(e.g. the periodical volume\). |
-| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record \(e.g. a periodical volume or volume\). |
-| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record \(e.g. at the level of a journal or a multi-volume work\). |
-| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object \(e.g. in the volume, in all chapters, title pages, illustrations, etc.\). |
-| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted \(e.g. metadata of the individual pages\). |
+| `work` | This parameter specifies that the metadata should be adjusted at the level of the physical work. This selection automatically chooses the main element (e.g. a monograph) or, in the case of an anchor record, the sub-element (e.g. the periodical volume). |
+| `child` | This parameter specifies that the metadata should be adjusted at the level of the sub-element of an anchor record (e.g. a periodical volume or volume). |
+| `top` | This parameter specifies that the metadata should be adjusted at the level of the anchor record (e.g. at the level of a journal or a multi-volume work). |
+| `any` | This parameter specifies that the metadata should be adjusted at all levels of the object (e.g. in the volume, in all chapters, title pages, illustrations, etc.). |
+| `physical` | This parameter specifies that the metadata within the physical structure elements should be adjusted (e.g. metadata of the individual pages). |
 
 
 ### GoobiScript: changeProcessTemplate
@@ -551,7 +551,7 @@ The GoobiScript `executeStepAndUpdateStatus` executes a selected step and then u
 ### GoobiScript: exportDatabaseInformation
 The GoobiScript `exportDatabaseInformation` exports all database contents of the selected Goobi operations to an internal XML file. This is then located in the Goobi file system within the process folder and has a file name that can be used to import the data into another Goobi instance. The path of such a file is e.g.
 
-```text
+```bash
 /opt/digiverso/goobi/metadata/123/123_db_export.xml
 ```
 
@@ -559,11 +559,11 @@ No parameters are required to run this GoobiScript.
 
 
 ### GoobiScript: moveWorkflowForward
-With the GoobiScript `moveWorkflowForward` the status of the workflow can be moved forward step by step. Each time this GoobiScript is executed, the active workflow step is changed accordingly \(e.g. from `open` to `in work`\).
+With the GoobiScript `moveWorkflowForward` the status of the workflow can be moved forward step by step. Each time this GoobiScript is executed, the active workflow step is changed accordingly (e.g. from `open` to `in work`).
 
 
 ### GoobiScript: moveWorkflowBackward
-With the GoobiScript `moveWorkflowBackward` the status of the workflow can be moved backwards step by step. Each time this GoobiScript is executed, the active work step is changed accordingly \(e.g. from `completed` to `in work`\).
+With the GoobiScript `moveWorkflowBackward` the status of the workflow can be moved backwards step by step. Each time this GoobiScript is executed, the active work step is changed accordingly (e.g. from `completed` to `in work`).
 
 
 ### GoobiScript: setPriority

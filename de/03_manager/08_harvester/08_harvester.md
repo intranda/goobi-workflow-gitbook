@@ -6,13 +6,13 @@ Der Harvester kann genutzt werden, um automatisiert Daten aus externen Repositor
 
 Um auf den Harvester zugreifen zu können, muss der Nutzer über das Recht `Harvester Repositories bearbeiten` verfügen. Dann steht innerhalb des Menüpunkts `Administration` der Punkt `Harvester` zur Verfügung. Dort öffnet sich dann die Maske für die Auflistung aller konfigurierten Repositorien. 
 
-![Liste der konfigurierten Repositorien in Goobi](30-90d.png)
+![Liste der konfigurierten Repositorien in Goobi](screen1_de.png)
 
 Die Funktion ein neues `Repository hinzufügen` öffnet die Bearbeitungsmaske zum Anlegen eines neuen Repositorium. 
 
 ## Konfiguration
 
-![Bearbeitungsmaske zum hinzufügen von Repositorien](30-91d.png)
+![Bearbeitungsmaske zum hinzufügen von Repositorien](screen2_de.png)
 
 Als erstes muss ein Name angegeben werden und der Protokolltyp ausgewählt werden. Dabei stehen `OAI-PMH`, `Internet Archive Websuche`, `Internet Archive CLI` und die `BACH API` zur Verfügung. 
 

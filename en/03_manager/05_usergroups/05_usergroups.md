@@ -2,18 +2,18 @@
 
 In order to ensure flexibility in the handling of freely configurable workflows and the corresponding users, you will need to define a number of user groups. These user groups can be understood as the roles, activities or skills of individual users within the workflow. By way of example, user groups can be created for scan operators, metadata editors and administrators. You are free to define these groups as you wish in Goobi and then assign individual users to them. To open the list of existing user groups, click on the menu item `Administration - User groups` in the menu. Goobi will display a list of all the user groups that have already been defined. For each of these user groups, you can also display a list of all the users assigned to that group. To show this list, simply click on the little symbol to the left of the user group name.
 
-![List of all previously configured user groups and assigned users](usergroups1_en.png)
+![List of all previously configured user groups and assigned users](screen_usergroups1_en.png)
 
 To create additional user groups, click on the Create new user group link. To edit existing user groups, however, you need to click on the Edit symbol in the Actions column.
 
 | Icon | Description |
 | :--- | :--- |
-| ![ruleset\_02.png](ruleset_02.png) | Create new user group |
-| ![ruleset\_01.png](ruleset_01.png) | Edit existing user group |
+| ![icon_new.png](icon_new.png) | Create new user group |
+| ![icon_edit.png](icon_edit.png) | Edit existing user group |
 
 Within the editing mask, a title must always be assigned to a user group. This can be freely selected. Please make sure that you select this title as descriptively as possible to give you and other administrators in Goobi a better overview.
 
-![Editing a user group](usergroups2_en.png)
+![Editing a user group](screen_usergroups2_en.png)
 
 Very granular permissions can now be assigned to each defined user group. These can be added in the right area of the form by simply clicking on an authorization. A click on an authorization in the left area removes it from the user group.
 
@@ -212,7 +212,7 @@ This permission gives the user the rights to apply all GoobiScripts over a numbe
 
 It is possible for user groups to be given specific rights to execute selected GoobiScripts. For this purpose, the assignment of the permission is not done by clicking on one of the indicated rights in the right area. Instead, the GoobiScript to be allowed is named in the right input field and is accepted by clicking on the button with the plus icon. The assignment of the permission is done in such a way that `goobiscript_` is entered followed by the name of the concrete GoobiScript.
 
-![Assign a permission for a GoobiScript](goobiScript1_en.png)
+![Assign a permission for a GoobiScript](screen_goobiScript_en.png)
 
 Accordingly, the following authorizations can be assigned as examples:
 

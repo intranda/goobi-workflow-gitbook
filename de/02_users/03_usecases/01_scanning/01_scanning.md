@@ -2,13 +2,13 @@
 
 Ein Scanoperateur, der in Goobi seine tägliche Arbeit verrichtet, unterscheidet sich in seiner Arbeitsweise unwesentlich von anderen Nutzern mit anderen Qualifikationen oder Tätigkeitsbereichen in Goobi. Allen gemein ist, dass sie sich in Goobi zunächst einloggen und anschließend in der Menüleiste auf den Menüpunkt `Meine Aufgaben` klicken.
 
-![&#x201A;Meine Aufgaben&#x2019; eines Scanoperateurs](30-30d.png)
+!['Meine Aufgaben' eines Scanoperateurs](screen1_de.png)
 
 Die Liste dieser Aufgaben enthält sämtliche Arbeitsschritte, für die der Scanoperateur aufgrund seiner Mitgliedschaft in Projekten und Benutzergruppen berechtigt ist. In der Liste seiner Aufgaben ist in der Spalte `Aktionen` erkennbar, in welchem Status sich die einzelnen Arbeitsschritte gerade befinden. Wie bereits in [Abschnitt Meine Aufgaben beschrieben](../2/2.8.md), ist für den einzelnen Nutzer sofort erkennbar, welche Aufgaben noch im Status auf offen stehen und auf die Bearbeitung durch einen Nutzer warten, oder welche sich bereits im Status `In Bearbeitung` durch die eigene oder eine anderer Person gleicher Berechtigung und gleicher Qualifikation befinden. Die Symbole in der Spalte `Priorität` weisen auf Korrekturmeldungen oder Prioritäten hin.
 
 In der täglichen Arbeitsweise mit Goobi erfolgt die aufgabenorientierte Erledigung der Arbeit üblicherweise so, dass der Nutzer eine Aufgabe aus der Liste seiner angebotenen Aufgaben auswählt und auf die Schaltfläche Aktionen der zugehörigen Aufgabe klickt. Es öffnet sich eine Maske mit erweiterten Details zu der Aufgabe.
 
-![Details einer Aufgabe nach deren Annahme](30-31d.png)
+![Details einer Aufgabe nach deren Annahme](screen2_de.png)
 
 Neben einigen im linken oberen Bereich dargestellten allgemeinen Details zu der ausgewählten Aufgabe, die zur Bearbeitung übernommen wurde, bietet Goobi Ihnen im linken unteren Bereich das `Vorgangslog`, in das Sie beliebige Informationen eintragen können. Diese Informationen sind für sämtliche Bearbeiter sichtbar, die diesen vorliegenden Vorgang an späterer Stelle in einer anderen Aufgabe innerhalb des Workflows bearbeiten werden. Es handelt sich hierbei demnach um ein freies Kommunikationsfeld für allgemeine Anmerkungen oder Hinweise. So kann an dieser Stelle beispielsweise darauf hingewiesen werden, dass für das vorliegende Werk aufgrund seiner Beschaffenheit mit besonderer Vorsicht zu arbeiten ist, oder eine Besonderheit zu diesem Vorgang in Goobi von sämtlichen Bearbeitern an nachfolgende Arbeitsstationen zur Kenntnis genommen werden soll. Kommentare, die Nutzer manuell in dieses `Vorgangslog` eintragen, werden generell in grüner Farbe dargestellt.
 
@@ -18,9 +18,9 @@ Darüber hinaus kann im oberen Bereich des Vorgangslogs auf den Dateibereich gew
 
 Informationen, die durch externe Applikationen oder Skripte zu dem aktuell dargestellten Vorgang übergeben wurden, werden innerhalb des Vorgangslogs mit unterschiedlichen Farben dargestellt. Die hierbei verwendeten Farben haben die folgenden Bedeutungen:
 
-_**Farben innerhalb des Vorgangslogs**_
+**Farben innerhalb des Vorgangslogs**
 
-| **Farben** | **Bedeutung** |
+| Farben | Bedeutung |
 | :--- | :--- |
 | Grau | Meldungen mit detaillierten Informationen zum Programmablauf. Diese sind in erster Linie für genauere Analysen gedacht und weniger für den Anwender. |
 | Blau | Meldungen mit allgemeinen Informationen. |

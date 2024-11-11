@@ -12,7 +12,7 @@ At any time while you are working with the Metadata Editor, you can use the `Val
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_16a.png](mets_16a.png) | Validate metadata against designated ruleset |
+| ![icon_mets_validate.png](icon_mets_validate.png) | Validate metadata against designated ruleset |
 
 ### Fixed image
 
@@ -20,7 +20,7 @@ By choosing this function you can prevent the image from scrolling in the Metada
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_16b.png](mets_16b.png) | Fix the image display to avoid image scrolling |
+| ![icon_mets_fix.png](icon_mets_fix.png) | Fix the image display to avoid image scrolling |
 
 ### Settings
 
@@ -28,7 +28,7 @@ This menu bar icon provides several options for additional settings. Simply clic
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_16c.png](mets_16c.png) | This menu bar icon allows you to choose various settings from a sub-menu. |
+| ![icon_mets_settings.png](icon_mets_settings.png) | This menu bar icon allows you to choose various settings from a sub-menu. |
 
 ### Save
 
@@ -36,7 +36,7 @@ The `Save` option allows you to save your work in the Metadata Editor at any tim
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_16d.png](mets_16d.png) | Save the current structure data and metadata |
+| ![icon_mets_save.png](icon_mets_save.png) | Save the current structure data and metadata |
 
 ### Exit the METS Editor
 
@@ -48,13 +48,13 @@ The option `Save and exit` saves all your work and closes the Metadata Editor. G
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_16f.png](mets_16f.png) | Verlassen des METS-Editors mit oder ohne vorheriges Speichern |
+| ![icon_mets_leave.png](icon_mets_leave.png) | Verlassen des METS-Editors mit oder ohne vorheriges Speichern |
 
 ## Additional settings
 
 If you select the menu bar icon Settings, Goobi will display a drop-down list containing several additional functions.
 
-![Additional settings and functions in the METS Editor](30-44e.png)
+![Additional settings and functions in the METS Editor](screen1_en.png)
 
 ### Display the hierarchical level in the structure hierarchy
 
@@ -62,7 +62,7 @@ Click on this function to display information about the hierarchical level of ea
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_21a.png](mets_21a.png) | Display the hierarchical level in the structure hierarchy |
+| ![icon_mets_level.png](icon_mets_level.png) | Display the hierarchical level in the structure hierarchy |
 
 ### Fully collapse the structural hierarchy
 
@@ -70,7 +70,7 @@ Using this function, you can switch between the fully expanded and fully compres
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_21b.png](mets_21b.png) | Fully collapse the structural hierarchy |
+| ![icon_mets_expand.png](icon_mets_expand.png) | Fully collapse the structural hierarchy |
 
 ### Hide image / Show image
 
@@ -78,7 +78,7 @@ You can select the `Hide image` option at any time to prevent the image from bei
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_21c.png](mets_21c.png) | Hide image / Show image |
+| ![icon_mets_image.png](icon_mets_image.png) | Hide image / Show image |
 
 ### Reset pagination completely
 
@@ -86,7 +86,7 @@ This option allows you to recommence pagination. You may wish to use this functi
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_21d.png](mets_21d.png) | Reset pagination completely |
+| ![icon_mets_reset.png](icon_mets_reset.png) | Reset pagination completely |
 
 ### Show physical structure tree / Show logical structure tree
 
@@ -94,7 +94,7 @@ This function allows you to work with the physical structure tree rather than th
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_21e.png](mets_21e.png) | Show physical structure tree / Show logical structure tree |
+| ![icon_mets_tree.png](icon_mets_tree.png) | Show physical structure tree / Show logical structure tree |
 
 ## Functions available at right-hand edge of the structure tree pane
 
@@ -106,7 +106,7 @@ The function gives you an option to link the structure tree on the left of the M
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_05.png](mets_05.png) | Link the image with the selected structure element |
+| ![icon_mets_link.png](icon_mets_link.png) | Link the image with the selected structure element |
 
 ### Show main title in the structural hierarchy
 
@@ -114,15 +114,15 @@ If you activate this function, Goobi will display the names given to individual 
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_07.png](mets_06.png) | Show main title in the structural hierarchy |
+| ![icon_mets_title.png](icon_mets_title.png) | Show main title in the structural hierarchy |
 
 ### Display the assigned pages in the structure hierarchy
 
-Select the `Tree page number` to display the page ranges allocated to each structure element in the structure tree on the left. The first and last page of the range will appear in brackets next to each structure element. Each page range displayed contains the image number and the page label \(printed page number\).
+Select the `Tree page number` to display the page ranges allocated to each structure element in the structure tree on the left. The first and last page of the range will appear in brackets next to each structure element. Each page range displayed contains the image number and the page label (printed page number).
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_07.png](mets_07.png) | Display the assigned pages in the structure hierarchy |
+| ![icon_mets_assigned.png](icon_mets_assigned.png) | Display the assigned pages in the structure hierarchy |
 
 ### Print this page
 
@@ -130,6 +130,6 @@ Select this icon if you wish to print out the structure tree.
 
 | Icon | Description |
 | :--- | :--- |
-| ![mets\_08.png](mets_08.png) | Print the structure element hierarchy |
+| ![icon_mets_print.png](icon_mets_print.png) | Print the structure element hierarchy |
 
-![Structure tree with all the activated header bar functions.](30-45e.png)
+![Structure tree with all the activated header bar functions.](screen2_en.png)

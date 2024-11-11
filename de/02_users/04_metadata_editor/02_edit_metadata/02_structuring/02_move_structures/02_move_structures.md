@@ -6,11 +6,11 @@ Unter anderem ist hier das Verschieben von Strukturelementen an eine andere Stel
 
 | Icon                                                        | Beschreibung                                                                     |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| ![mets\_17a.png](mets\_17a.png) | Strukturelement auf gleicher Hierarchiestufe in der Position nach oben schieben  |
-| ![mets\_17b.png](mets\_17b.png) | Strukturelement auf gleicher Hierarchiestufe in der Position nach unten schieben |
+| ![icon_mets_up.png](icon_mets_up.png) | Strukturelement auf gleicher Hierarchiestufe in der Position nach oben schieben  |
+| ![icon_mets_down.png](icon_mets_down.png) | Strukturelement auf gleicher Hierarchiestufe in der Position nach unten schieben |
 
 Soll hingegen das Strukturelement an eine andere Stelle innerhalb der Hierarchie bewegt werden, wählen Sie hierzu die Funktion `Strukturelement an andere Stelle schieben`. Im sich anschliessend öffnenden Dialog haben Sie nun die Möglichkeit festzulegen, wo das Element genau positioniert werden soll. Hierbei werden basierend auf dem Regelsatz von Goobi nur diejenigen Stellen auswählbar angeboten, an der das Element laut Regelsatz eingefügt werden darf.
 
 | Icon                                                        | Beschreibung                                                            |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![mets\_17c.png](mets\_17c.png) | Strukturelement innerhalb der Hierarchie an eine andere Stelle schieben |
+| ![icon_mets_move.png](icon_mets_move.png) | Strukturelement innerhalb der Hierarchie an eine andere Stelle schieben |

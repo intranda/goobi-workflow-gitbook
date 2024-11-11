@@ -2,7 +2,7 @@
 
 There are various keyboard combinations available in the metadata editor. These are summarised here once again:
 
-| **Keyboard combination** | Description of function |
+| Keyboard combination | Description of function |
 | :--- | :--- |
 | `Ctrl` + `Shift` + `Cursor left` | Move to previous image |
 | `Ctrl` + `Shift` + `Cursor right` | Move to next image |

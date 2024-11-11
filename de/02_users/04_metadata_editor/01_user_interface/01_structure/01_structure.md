@@ -4,8 +4,8 @@ Im linken grau hinterlegten Bereich befindet sich der Strukturbaum. Hier lassen 
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![](mets_04b.png) | Symbol zum Ein- und Ausklappen des Hierarchiebaums der Strukturelemente |
+| ![](icon_mets_down.png) | Symbol zum Ein- und Ausklappen des Hierarchiebaums der Strukturelemente |
 
 Ein Klick auf das Icon vor den Strukturelementen ermöglicht ein Auf- und Zuklappen der einzelnen Bereiche innerhalb des Strukturbaumes. Halten Sie den Mauszeiger über das kleine Symbol zu einem Strukturelement, so sehen Sie in einem Popup weitere Details zu dem Strukturelement ohne es öffnen zu müssen.
 
-![Der Mauszeiger &#xFC;ber einem Element im Strukturbaum zeigt zus&#xE4;tzliche Informationen zu dem Titel und den zugewiesenen Seiten des Strukturelementes an](30-41d.png)
+![Der Mauszeiger über einem Element im Strukturbaum zeigt zusätzliche Informationen zu dem Titel und den zugewiesenen Seiten des Strukturelementes an](screen_de.png)

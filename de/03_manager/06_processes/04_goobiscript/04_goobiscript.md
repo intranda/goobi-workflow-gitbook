@@ -4,11 +4,11 @@ Innerhalb der möglichen Aktionen, die sich auf mehrere Vorgänge gemeinsam anwe
 
 Jedes GoobiScript besteht aus der Nennung des Namens, welches GoobiScript ausgeführt werden soll, sowie den zugehörigen Parametern. Sämtliche aufgelisteten GoobiScripts zeigen nach einem Klick auf eines dieser Skripte die jeweils relevanten Parameter an. Ersetzen Sie hierbei die beispielshaft angezeigten Parameter durch ihre gewünschten Einstellungen.
 
-![Liste der bereitgestellten GoobiScripts](goobiScript2_de.png)
+![Liste der bereitgestellten GoobiScripts](screen1_de.png)
 
 Nach dem Vervollständigen des GoobiScripts können Sie dieses nun auf ausgewählte Treffer oder auch die gesamte Trefferliste anwenden. Vor der Ausführung erscheint jedoch noch eine Sicherheitsabfrage, in der zunächst noch einmal bestätigt werden muss, auf welche Anzahl an Vorgängen das GoobiScript angewendet werden soll.
 
-![Sicherheitsabfrage vor der Ausführung von GoobiScript](goobiScript3_de.png)
+![Sicherheitsabfrage vor der Ausführung von GoobiScript](screen2_de.png)
 
 {% hint style="info" %}
 Bitte beachten Sie, dass Sie ggf. nicht auf alle GoobiScripte Zugriff haben, über die Goobi verfügt. Einige der GoobiScripte können ausgeblendet sein. Unter Umständen wurde Ihrer Benutzergruppe auch nicht der Zugriff auf alle GoobiScripte gewährt. Eine genauer Erläuterung über die Zuweisung der Berechtigungen für GoobiScripte findet sich hier:
@@ -108,11 +108,11 @@ steptitle: Upload images
 plugin: intranda_step_fileUpload
 ```
 
-![Mehrere GoobiScripts in kompakter Form vor dem Absenden](goobiScript4_de.png)
+![Mehrere GoobiScripts in kompakter Form vor dem Absenden](screen3_de.png)
 
 Die Verarbeitung solcher mehrfachen GoobiScripte erfolgt nach dem Absenden in der Reihenfolge der Nennung jeweils über alle betroffenen Vorgänge. Bezogen auf dieses Beispiel bedeuted dies, wenn 3 Vorgänge betroffen sind folgende Abarbeitung:
 
-![Abarbeitungsreihenfolge der GoobiScripts](goobiScript5_de.png)
+![Abarbeitungsreihenfolge der GoobiScripts](screen4_de.png)
 
 {% hint style="info" %}
 Bitte vermeiden Sie, dass Sie weitere GoobiScripte nur starten sollten, wenn nicht gerade andere GoobiScripte bereits in Bearbeitung sind. Hier kann es ansonsten zu unerwünschten Abbrüchen der Abarbeitung der GoobiScripte kommen. Diese Einschränkung soll allerdings in künftigen Versionen Goobi workflow behoben werden.
@@ -154,7 +154,7 @@ Das GoobiScript `setRuleset` erlaubt an zentraler Stelle den zu verwendenden Reg
 
 
 ### GoobiScript: deleteStep
-Führen Sie das GoobiScript `deleteStep` aus, um für mehrere Vorgänge gemeinsam einen ausgewählten Arbeitsschritt aus dem Workflow zu löschen. Bitte beachten Sie hierbei, dass sämtliche produktionsrelevanten Daten, die für diesen Arbeitsschritt mitgeführt wurden \(z. B. Bearbeiter, Bearbeitungsdatum, Status\) ebenfalls gelöscht werden. Das Ausführen dieses GoobiScripts löscht den in dem Parameter `steptitle` mit seinem vollständigen Titel definierten Arbeitsschritt aus den gewählten Vorgängen.
+Führen Sie das GoobiScript `deleteStep` aus, um für mehrere Vorgänge gemeinsam einen ausgewählten Arbeitsschritt aus dem Workflow zu löschen. Bitte beachten Sie hierbei, dass sämtliche produktionsrelevanten Daten, die für diesen Arbeitsschritt mitgeführt wurden (z. B. Bearbeiter, Bearbeitungsdatum, Status) ebenfalls gelöscht werden. Das Ausführen dieses GoobiScripts löscht den in dem Parameter `steptitle` mit seinem vollständigen Titel definierten Arbeitsschritt aus den gewählten Vorgängen.
 
 
 ### GoobiScript: addStep
@@ -162,7 +162,7 @@ Das GoobiScript `addStep` ermöglicht das automatische Anlegen eines Arbeitsschr
 
 
 ### GoobiScript: addStepAtOtherStepPosition
-Das GoobiScript `addStepAtOtherStepPosition` ermöglicht das Erzeugen eines Arbeitsschrittes mit einem definierten Titel an eine definierte Postion innerhalb des Workflows, an der sich bereits ein anderer Arbeitsschritt befindet. Durch das Einfügen des neuen Arbeitsschrittes werden alle existierenden Arbeitsschritte mit dieser oder einer nachfolgenden Position so nach hinten verschoben, dass der neue Arbeitsschritt an der gewünschten Zielposition eingefügt werden kann. Der Parameter `newsteptitle` erlaubt die Festlegung des Titels für den neuen einzufügenden Arbeitsschritt. Mit dem Parameter `existingsteptitle` wird der Name desjenigen Arbeitsschrittes definiert, der die Zielposition des einzufügenden Schrittes bestimmt. Der Parameter `insertionstrategy` definiert hierbei, ob der neue Schritt vor \(`before`\) oder nach \(`after`\) dem angegebenen bereits existierenden Schritt eingefügt werden soll.
+Das GoobiScript `addStepAtOtherStepPosition` ermöglicht das Erzeugen eines Arbeitsschrittes mit einem definierten Titel an eine definierte Postion innerhalb des Workflows, an der sich bereits ein anderer Arbeitsschritt befindet. Durch das Einfügen des neuen Arbeitsschrittes werden alle existierenden Arbeitsschritte mit dieser oder einer nachfolgenden Position so nach hinten verschoben, dass der neue Arbeitsschritt an der gewünschten Zielposition eingefügt werden kann. Der Parameter `newsteptitle` erlaubt die Festlegung des Titels für den neuen einzufügenden Arbeitsschritt. Mit dem Parameter `existingsteptitle` wird der Name desjenigen Arbeitsschrittes definiert, der die Zielposition des einzufügenden Schrittes bestimmt. Der Parameter `insertionstrategy` definiert hierbei, ob der neue Schritt vor (`before`) oder nach (`after`) dem angegebenen bereits existierenden Schritt eingefügt werden soll.
 
 
 ### GoobiScript: setStepStatus
@@ -213,9 +213,9 @@ Verwenden Sie das GoobiScript `setStepProperty`, um einzelne Optionen für einen
 | `exportdms` | für die Eigenschaft, ob der Arbeitsschritt einen Export in das Präsentationssystem durchführen können soll |
 | `batch` | für die Eigenschaft, ob der Arbeitsschritt zusammen mit allen anderen Arbeitsschritten im Batch-Modus ausgeführt werden soll. |
 | `automatic` | für die Eigenschaft, ob der Arbeitsschritt automatisch ausgeführt werden soll |
-| `importfileupload` | für die Eigenschaft, ob in diesem Arbeitsschritt ein Datei-Upload für den import verwendet werden soll  \(Bitte beachten, dass diese Funktion keine Verwendung mehr in Goobi findet.\) |
-| `acceptandclose` | für die Eigenschaft, ob der Arbeitsschritt ohne Aktion direkt angenommen und wieder geschlossen werden soll. \(Bitte beachten, dass diese Funktion keine Verwendung mehr in Goobi findet.\) |
-| `acceptmoduleandclose` | für die Eigenschaft, ob ein Modul eine Arbeitsschritts angenommen   und ausgeführt werden soll und der Arbeitsschritt auch sofort abgeschlossen   werden soll.\(Bitte beachten, dass diese Funktion keine Verwendung mehr in Goobi findet.\) |
+| `importfileupload` | für die Eigenschaft, ob in diesem Arbeitsschritt ein Datei-Upload für den import verwendet werden soll  (Bitte beachten, dass diese Funktion keine Verwendung mehr in Goobi findet.) |
+| `acceptandclose` | für die Eigenschaft, ob der Arbeitsschritt ohne Aktion direkt angenommen und wieder geschlossen werden soll. (Bitte beachten, dass diese Funktion keine Verwendung mehr in Goobi findet.) |
+| `acceptmoduleandclose` | für die Eigenschaft, ob ein Modul eine Arbeitsschritts angenommen   und ausgeführt werden soll und der Arbeitsschritt auch sofort abgeschlossen   werden soll.(Bitte beachten, dass diese Funktion keine Verwendung mehr in Goobi findet.) |
 | `script` | für die Eigenschaft, ob der Arbeitsschritt ein Script ausführen soll. |
 | `delay` | für die Eigenschaft, ob dieser Arbeitsschritt ein Delay-Arbeitsschritt ist, der eine konfigurierte Zeit warten soll |
 | `updatemetadataindex` | für die Eigenschaft, dass der interne Datenbank-Index in diesem Arbeitsschritt aktualisiert werden soll |
@@ -239,7 +239,7 @@ Enthält der Arbeitsschritt mehrere Skripte, kann der Parameter `script` verwend
 
 
 ### GoobiScript: deleteProcess
-Führen Sie das GoobiScript `deleteProcess` aus, um Vorgänge zu löschen. Dabei muss mit dem Parameter `contentOnly` \(Werte `true` oder `false`\) angegeben werden, ob nur die Daten aus dem Dateisystem oder auch alle Informationen aus der Datenbank gelöscht werden sollen.
+Führen Sie das GoobiScript `deleteProcess` aus, um Vorgänge zu löschen. Dabei muss mit dem Parameter `contentOnly` (Werte `true` oder `false`) angegeben werden, ob nur die Daten aus dem Dateisystem oder auch alle Informationen aus der Datenbank gelöscht werden sollen.
 
 
 ### GoobiScript: addPluginToStep
@@ -289,11 +289,11 @@ Der Parameter `position` erlaubt die Festlegung, wo das Metadatum vorgefunden we
 
 | Position | Beschreibung |
 | :--- | :--- |
-| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement \(z.B. eine Monographie\) oder im Falle eines Anchor-Datensatzes das Unterelement \(z.B. den Zeitschriftenband\). |
-| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll \(z.B. eines Zeitschriftenbandes oder eines Bandes\). |
-| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll \(z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes\). |
-| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll \(z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.\). |
-| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll \(z.B. Metadaten der einzelnen Seiten\). |
+| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement (z.B. eine Monographie) oder im Falle eines Anchor-Datensatzes das Unterelement (z.B. den Zeitschriftenband). |
+| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll (z.B. eines Zeitschriftenbandes oder eines Bandes). |
+| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll (z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes). |
+| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll (z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.). |
+| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll (z.B. Metadaten der einzelnen Seiten). |
 
 {% hint style="success" %}
 **Beispiele für den Aufruf:**
@@ -333,11 +333,11 @@ Der Parameter `position` erlaubt die Festlegung, wo das Metadatum eingefügt wer
 
 | Position | Beschreibung |
 | :--- | :--- |
-| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement \(z.B. eine Monographie\) oder im Falle eines Anchor-Datensatzes das Unterelement \(z.B. den Zeitschriftenband\). |
-| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll \(z.B. eines Zeitschriftenbandes oder eines Bandes\). |
-| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll \(z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes\). |
-| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll \(z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.\). |
-| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll \(z.B. Metadaten der einzelnen Seiten\). |
+| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement (z.B. eine Monographie) oder im Falle eines Anchor-Datensatzes das Unterelement (z.B. den Zeitschriftenband). |
+| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll (z.B. eines Zeitschriftenbandes oder eines Bandes). |
+| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll (z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes). |
+| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll (z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.). |
+| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll (z.B. Metadaten der einzelnen Seiten). |
 
 Mittels der Parameter `authorityName` und `authorityValue` lassen sich auch beliebige Normdaten hinzufügen.
 
@@ -389,11 +389,11 @@ Der Parameter `position` erlaubt die Festlegung, wo das zu ersetzende Metadatum 
 
 | Position | Beschreibung |
 | :--- | :--- |
-| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement \(z.B. eine Monographie\) oder im Falle eines Anchor-Datensatzes das Unterelement \(z.B. den Zeitschriftenband\). |
-| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll \(z.B. eines Zeitschriftenbandes oder eines Bandes\). |
-| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll \(z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes\). |
-| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll \(z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.\). |
-| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll \(z.B. Metadaten der einzelnen Seiten\). |
+| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement (z.B. eine Monographie) oder im Falle eines Anchor-Datensatzes das Unterelement (z.B. den Zeitschriftenband). |
+| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll (z.B. eines Zeitschriftenbandes oder eines Bandes). |
+| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll (z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes). |
+| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll (z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.). |
+| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll (z.B. Metadaten der einzelnen Seiten). |
 
 Mittels der Parameter `authorityName` und `authorityValue` können beliebige Normdaten hinzugefügt oder geändert werden.
 
@@ -449,11 +449,11 @@ Der Parameter `position` erlaubt die Festlegung, wo das Metadatum vorliegen und 
 
 | Position | Beschreibung |
 | :--- | :--- |
-| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement \(z.B. eine Monographie\) oder im Falle eines Anchor-Datensatzes das Unterelement \(z.B. den Zeitschriftenband\). |
-| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll \(z.B. eines Zeitschriftenbandes oder eines Bandes\). |
-| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll \(z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes\). |
-| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll \(z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.\). |
-| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll \(z.B. Metadaten der einzelnen Seiten\). |
+| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement (z.B. eine Monographie) oder im Falle eines Anchor-Datensatzes das Unterelement (z.B. den Zeitschriftenband). |
+| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll (z.B. eines Zeitschriftenbandes oder eines Bandes). |
+| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll (z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes). |
+| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll (z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.). |
+| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll (z.B. Metadaten der einzelnen Seiten). |
 | `condition` | Dieser Parameter kann optional verwendet werden, um eine Bedingung für das Ersetzen von Metadaten festzulegen. Wird dieser Parameter angegeben und ist der gegebene Wert nicht leer, so wird das Metadatum nur für die Datensätze verändert, bei denen der vorherige Wert den hier genannten Text beinhaltet. |
 
 {% hint style="success" %}
@@ -499,11 +499,11 @@ Das GoobiScript `metadataChangePersonType` ändert den Rollentyp einer Person. D
 
 | Position | Beschreibung |
 | :--- | :--- |
-| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement \(z.B. eine Monographie\) oder im Falle eines Anchor-Datensatzes das Unterelement \(z.B. den Zeitschriftenband\). |
-| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll \(z.B. eines Zeitschriftenbandes oder eines Bandes\). |
-| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll \(z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes\). |
-| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll \(z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.\). |
-| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll \(z.B. Metadaten der einzelnen Seiten\). |
+| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement (z.B. eine Monographie) oder im Falle eines Anchor-Datensatzes das Unterelement (z.B. den Zeitschriftenband). |
+| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll (z.B. eines Zeitschriftenbandes oder eines Bandes). |
+| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll (z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes). |
+| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll (z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.). |
+| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll (z.B. Metadaten der einzelnen Seiten). |
 
 ### GoobiScript: metadataChangeType
 Das GoobiScript `metadataChangeType` ändert den Typ eines Metadatums. Der Aufruf verlangt vier Parameter. Der Parameter `oldType` legt fest, wie der alte Typ des Metadatum lautet. Der Parameter `newType` legt den neuen Typ für das Metadatum fest. Der Parameter `ignoreErrors` steuert, ob im Fehlerfall die Bearbeitung und Speicherung der METS-Datei fortgesetzt werden oder ob die Bearbeitung für das Objekt abgebrochen werden soll. Mit dem Parameter `type` läßt sich steuern, ob die Änderung an einem einfachen Metadatum oder innerhalb einer Metadatengruppe erfolgen soll. Der Parameter `group` definiert die Metadatengruppe, bei der das Metadatum geändert werden soll. Hierbei bestehen folgende Anwendungsszenarien:
@@ -516,11 +516,11 @@ Der Parameter `position` erlaubt die Festlegung, an welcher Stelle das Metadatum
 
 | Position | Beschreibung |
 | :--- | :--- |
-| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement \(z.B. eine Monographie\) oder im Falle eines Anchor-Datensatzes das Unterelement \(z.B. den Zeitschriftenband\). |
-| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll \(z.B. eines Zeitschriftenbandes oder eines Bandes\). |
-| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll \(z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes\). |
-| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll \(z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.\). |
-| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll \(z.B. Metadaten der einzelnen Seiten\). |
+| `work` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des physischen Werkes angepasst werden soll. Diese Auswahl wählt automatisch das Hauptelement (z.B. eine Monographie) oder im Falle eines Anchor-Datensatzes das Unterelement (z.B. den Zeitschriftenband). |
+| `child` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Unterelementes eines Anchor-Datensatzes angepasst werden soll (z.B. eines Zeitschriftenbandes oder eines Bandes). |
+| `top` | Dieser Parameter legt fest, dass das Metadatum auf Ebene des Anchor-Datensatzes angepasst werden soll (z.B. auf Ebene einer Zeitschrift oder eines mehrbändigen Werkes). |
+| `any` | Dieser Parameter legt fest, dass das Metadatum auf allen Ebenen des Objekts angepasst werden soll (z.B. im Band, in allen Kapiteln, Titelblättern, Abbildungen usw.). |
+| `physical` | Dieser Parameter legt fest, dass das Metadatum innerhalb der physischen Strukturelemente angepasst werden soll (z.B. Metadaten der einzelnen Seiten). |
 
 
 ### GoobiScript: changeProcessTemplate
@@ -548,7 +548,7 @@ Das GoobiScript `executeStepAndUpdateStatus` führt einen gewählten Arbeitsschr
 ### GoobiScript: exportDatabaseInformation
 Das GoobiScript `exportDatabaseInformation` führt für alle gewählten Goobi-Vorgänge einen Export sämtlicher Datenbankinhalte des Vorgangs in eine interne XML-Datei durch. Diese befindet sich anschließend im Dateisystem von Goobi innerhalb des Vorgangsordners und trägt einen Dateinamen, der für den Import der Daten in einer anderen Goobi-Instanz verwendet werden kann. Der Pfad einer solchen Datei lautet z.B.
 
-```text
+```bash
 /opt/digiverso/goobi/metadata/123/123_db_export.xml
 ```
 
@@ -556,11 +556,11 @@ Es werden keine Parameter für die Ausführung dieses GoobiScripts benötigt.
 
 
 ### GoobiScript: moveWorkflowForward
-Mit dem GoobiScript `moveWorkflowForward` läßt sich der Status des Workflows Arbeitsschritt für Arbeitsschritt vorwärts bewegen. Mit jeder Ausführung dieses GoobiScripts wird entsprechend der jeweils aktive Arbeitsschritt verändert \(z.B. von `offen` zu `in Bearbeitung`\).
+Mit dem GoobiScript `moveWorkflowForward` läßt sich der Status des Workflows Arbeitsschritt für Arbeitsschritt vorwärts bewegen. Mit jeder Ausführung dieses GoobiScripts wird entsprechend der jeweils aktive Arbeitsschritt verändert (z.B. von `offen` zu `in Bearbeitung`).
 
 
 ### GoobiScript: moveWorkflowBackward
-Mit dem GoobiScript `moveWorkflowBackward` läßt sich der Status des Workflows Arbeitsschritt für Arbeitsschritt rückwärts bewegen. Mit jeder Ausführung dieses GoobiScripts wird entsprechend der jeweils aktive Arbeitsschritt verändert \(z.B. von `abgeschlossen` zu `in Bearbeitung`\).
+Mit dem GoobiScript `moveWorkflowBackward` läßt sich der Status des Workflows Arbeitsschritt für Arbeitsschritt rückwärts bewegen. Mit jeder Ausführung dieses GoobiScripts wird entsprechend der jeweils aktive Arbeitsschritt verändert (z.B. von `abgeschlossen` zu `in Bearbeitung`).
 
 
 ### GoobiScript: setPriority

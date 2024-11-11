@@ -2,7 +2,7 @@
 
 Provided that the server-based target folder is not empty, you can use the `Server-based import` box to select a folder from which previously exported images can now be imported into the current process.
 
-![Server-based file import](30-55e.png)
+![Server-based file import](screen_en.png)
 
 In order to do this, you will need to specify the point in the pagination sequence where you want to insert the new file. You can then choose whether the new files are to be inserted as `uncounted` pages or whether they are to be integrated into the existing pagination.
 

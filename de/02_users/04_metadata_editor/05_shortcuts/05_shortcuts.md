@@ -2,7 +2,7 @@
 
 Im Metdateneditor stehen verschiedene Tastenkombinationen zur Verfügung. Diese sind hier noch einmal zusammengetragen:
 
-| **Tastenkombination** | Beschreibung der Funktion |
+| Tastenkombination | Beschreibung der Funktion |
 | :--- | :--- |
 | `Strg` + `Shift` + `Cursor links` | zum vorherigen Bild wechseln |
 | `Strg` + `Shift` + `Cursor rechts` | zum nächsten Bild wechseln |

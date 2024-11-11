@@ -2,19 +2,19 @@
 
 Möchten Sie gezielt nach Vorgängen suchen, stellt Goobi hierfür eine erweiterte Suchmaske zur Verfügung. Diese erreichen Sie über das Menü `Workflow` - `Vorgang suchen`.
 
-![Erweiterte Maske f&#xFC;r die Suche nach Vorg&#xE4;ngen](30-72d.png)
+![Erweiterte Maske für die Suche nach Vorgängen](screen1_de.png)
 
 Für eine granulare Suche ist in diesem Zusammenhang relevant, dass auch diese Suchmaske Goobi-intern eine Filtersyntax verwendet, um damit die gesuchten Vorgänge aus der Datenbank zu ermitteln.
 
-![Ergebnis der Suchanfrage nach Umwandlung der Anfrage in die interne Suchsyntax](30-73d.png)
+![Ergebnis der Suchanfrage nach Umwandlung der Anfrage in die interne Suchsyntax](screen2_de.png)
 
 Aus den vorhergehenden Abbildungen wird deutlich, wie aus der Suchanfrage, die mittels der Suchmaske erfolgte, intern eine Suchabfrage auf der Basis der internen Suchsyntax durchgeführt wurde. Die generierte Suchanfrage ist im Filterfeld `Vorgänge filtern` oberhalb der Tabelle sichtbar und kann um zusätzliche Parameter erweitert werden. Außerdem ist es ebenfalls möglich, eine Suchanfrage dauerhaft zu speichern für den Fall, dass eine solche Suchanfrage häufiger aufgerufen werden soll.
 
 Damit steht sie in der Auswahlliste der vordefinierten Filter zur Verfügung und kann jederzeit neu ausgeführt werden. Die hier im Hintergrund wirkende Filtersyntax soll in diesem Abschnitt beispielhaft erläutert werden. Dies ist aus dem Grunde sinnvoll, da mit einer manuellen Kombination der im Folgenden beschriebenen Suchparameter noch detailliertere Suchanfragen möglich sind, als diese durch die Suchmaske angeboten werden. In der folgenden Tabelle werden einige beispielhafte Filter zusammen mit deren Suchverhalten detailliert beschrieben.
 
-_**Die detaillierte Filtersyntax für Vorgänge an Beispielen**_
+## Die detaillierte Filtersyntax für Vorgänge an Beispielen
 
-| **Filtersyntax** | **Beschreibung der Filterfunktionalität** |
+| Filtersyntax | Beschreibung der Filterfunktionalität |
 | :--- | :--- |
 | ab | Filtert nach allen Vorgängen aus allen Projekten, bei denen `ab` im Vorgangstitel vorkommt. |
 | -ab | Filtert nach allen Vorgängen, bei denen `ab` im Vorgangstitel nicht vorkommt. |
@@ -30,9 +30,9 @@ _**Die detaillierte Filtersyntax für Vorgänge an Beispielen**_
 | batch:3 | Filtert nach allen Vorgängen, die dem `batch` mit der Nummer `3` zugeordnet sind. |
 | -batch:3 | Filtert nach allen Vorgängen, die nicht dem `batch` mit der Nummer `3` zugeordnet sind. |
 | journal:intranda | Filtert nach allen Vorgängen, die im `Journal` das Wort `intranda` enthalten. |
-| project:sample\_project | Filtert nach allen Vorgängen aus dem Projekt `sample_project`. |
+| project:sample_project | Filtert nach allen Vorgängen aus dem Projekt `sample_project`. |
 | "project:sample project" | Filtert nach allen Vorgängen eines Projektes, wenn der Name des Projektes `Leerzeichen` beinhaltet. |
-| ab project:sample\_project | Filtert nach allen Projekten, die `ab` im Titel beinhalten und aus dem Projekt `sample_project` stammen. |
+| ab project:sample_project | Filtert nach allen Projekten, die `ab` im Titel beinhalten und aus dem Projekt `sample_project` stammen. |
 | ab -abc "project:sample project" | Filtert nach allen Vorgängen aus dem Projekt `sample project`, dessen Titel `ab` aber nicht `abc` enthält. |
 | "-project:sample project" | Filtert nach allen Vorgängen, die nicht aus dem Projekt `sample project` stammen. |
 | stepDone:7 | Filtert nach allen Vorgängen in allen Projekten, deren Workflowschritt mit der Reihenfolgennummer `7` bereits `abgeschlossen` wurde. |
@@ -68,6 +68,6 @@ _**Die detaillierte Filtersyntax für Vorgänge an Beispielen**_
 
 **Hinweis:** Die Operatoren `<` und `>` werden im Hintergrund als `kleiner gleich` und `größer gleich` interpretiert. Wird zum Beispiel nach `processdate>2022` gesucht, so werden alle Vorgänge aufgelistet, deren Erstelldatum 2022 und später ist.
 
-Wie Sie an den Beispielen der Filter erkennen können, sind über die freie Kombinierbarkeit verschiedenster Parameter miteinander auch sehr komplexe Filteranfragen möglich. Im Gegensatz zur einfach zu bedienenden Filtermaske können mittels der Suchsyntax auch gleiche Parameter mit unterschiedlichen Werten mehrfach innerhalb einer Anfrage verwendet werden \(z.B. die gleichzeitige Suche nach abgeschlossenen sowie nach offenen Arbeitsschritten eines Workflows\).
+Wie Sie an den Beispielen der Filter erkennen können, sind über die freie Kombinierbarkeit verschiedenster Parameter miteinander auch sehr komplexe Filteranfragen möglich. Im Gegensatz zur einfach zu bedienenden Filtermaske können mittels der Suchsyntax auch gleiche Parameter mit unterschiedlichen Werten mehrfach innerhalb einer Anfrage verwendet werden (z.B. die gleichzeitige Suche nach abgeschlossenen sowie nach offenen Arbeitsschritten eines Workflows).
 
 Sämtliche der hier aufgeführten Parameter sind beliebig untereinander kombinierbar. Bitte beachten Sie, dass jeder Parameter, der Leerzeichen beinhaltet, stets von Anführungszeichen eingeschlossen wird.

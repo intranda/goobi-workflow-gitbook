@@ -17,7 +17,7 @@ The following directories are usually located on this base path:
 /opt/digiverso/viewer/
 ```
 
-The `logs` directory is the main directory for log files. Goobi log files are also stored here \(assuming the system is properly configured\). The other directories listed above relate to frequently used applications \(e.g. `viewer` for the Goobi viewer, `itm` for the intranda Task Manager and `goobi` for Goobi.
+The `logs` directory is the main directory for log files. Goobi log files are also stored here (assuming the system is properly configured). The other directories listed above relate to frequently used applications (e.g. `viewer` for the Goobi viewer, `itm` for the intranda Task Manager and `goobi` for Goobi.
 
 The base path for Goobi is:
 
@@ -25,7 +25,7 @@ The base path for Goobi is:
 /opt/digiverso/goobi/
 ```
 
-In most cases, this base path will accommodate the following folder structure \(see below for details of each sub-directory\):
+In most cases, this base path will accommodate the following folder structure (see below for details of each sub-directory):
 
 ```bash
 /opt/digiverso/goobi/config/

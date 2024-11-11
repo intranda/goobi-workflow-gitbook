@@ -6,13 +6,13 @@ The harvester can be used to automatically import data from external repositorie
 
 To be able to access the harvester, the user must have the `Edit harvester repositories` right. The `Harvester` menu entry is then available under the `Administration` menu item. This opens the screen for listing all configured repositories. 
 
-![List of configured repositories in Goobi](30-90e.png)
+![List of configured repositories in Goobi](screen1_en.png)
 
 The function `Add repository` opens the editing screen to create a new repository.
 
 ## Configuration
 
-![Editing screen for adding repositories](30-91e.png)
+![Editing screen for adding repositories](screen2_en.png)
 
 The first step is to enter a name and select the protocol type. The following are available: `OAI-PMH`, `Internet Archive Web Search`, `Internet Archive CLI` and the `BACH API`.
 

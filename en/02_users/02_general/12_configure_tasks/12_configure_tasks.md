@@ -2,7 +2,7 @@
 
 On the page shown here, the details and plugins for tasks can be configured. The page does not differ significantly between tasks of process templates and those of existing processes. Differences are marked where appropriate.
 
-![On this page, fundamental settings and plugins can be configured for tasks.](taskDetails_en.png)
+![On this page, fundamental settings and plugins can be configured for tasks.](screen_en.png)
 
 ## Title
 
@@ -169,7 +169,7 @@ The script lines read from the table (but not the script files themselves) will 
 
 A few examples of scripts:
 
-```
+```bash
 /opt/digiverso/goobi/scripts/copyfiles.sh
 bash /opt/digiverso/goobi/scripts/myExampleScript.sh --action convert
 python /opt/digiverso/goobi/scripts/doAnything.py
@@ -234,7 +234,7 @@ The next step is to specify the **HTTP URL**. This is composed of the domain nam
 
 Some examples of API request URLs:
 
-```
+```text
 http://localhost:8080/api/endpoint/delete?id=20&project=2
 http://192.168.178.21:8888/api/endpoint/list
 https://goobi.example.org/api/endpoint/list?project=1

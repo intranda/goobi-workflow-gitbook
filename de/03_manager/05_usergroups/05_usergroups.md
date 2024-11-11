@@ -2,18 +2,18 @@
 
 Goobi benötigt für die flexible Handhabung der frei konfigurierbaren Workflows und der damit involvierten Benutzer, dass verschiedene Benutzergruppen festgelegt werden. Solche Benutzergruppen lassen sich verstehen als Rollen, Tätigkeiten oder Qualifikationen, die einzelne Personen innerhalb von Workflows haben können. Typische Beispiele für solche Benutzergruppen oder Rollen können unter anderem beispielsweise Scanoperateure, Metadatenbearbeiter oder Administratoren sein. Definieren Sie in Goobi diese Gruppen frei, um diese anschließend einzelnen Benutzern zuordnen zu können. Sie gelangen in die Auflistung der bestehenden Benutzergruppen, indem Sie über den Menüpunkt `Administration` in der Menüleiste den Menüpunkt `Benutzergruppen` auswählen. In der somit geöffneten Liste der Benutzergruppen werden nun all diejenigen Gruppen angezeigt, die bereits in Goobi festgelegt wurden. Zu jeder dieser festgelegten Benutzergruppe lassen sich alle Benutzer auflisten, die dieser Benutzergruppe zugewiesen wurden. Klicken Sie für diese Auflistung einfach auf das kleine Symbol vor jeder aufgelisteten Benutzergruppe. Anschließend erhalten Sie Einsicht in alle zugewiesenen Benutzer.
 
-![Auflistung aller bereits konfigurierten Benutzergruppen und der zugewiesenen Benutzer](usergroups1_de.png)
+![Auflistung aller bereits konfigurierten Benutzergruppen und der zugewiesenen Benutzer](screen_usergroups1_de.png)
 
 Zusätzliche Benutzergruppen können Sie erzeugen, indem Sie einfach auf den Link `Neue Benutzergruppe anlegen` klicken. Bestehende Benutzergruppen hingegen lassen sich bearbeiten, indem in der Spalte `Aktionen` auf das Editieren-Icon geklickt wird.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![ruleset\_02.png](ruleset_02.png) | Neue Benutzergruppe anlegen |
-| ![ruleset\_01.png](ruleset_01.png) | Neue Benutzergruppe anlegen |
+| ![icon_new.png](icon_new.png) | Neue Benutzergruppe anlegen |
+| ![icon_edit.png](icon_edit.png) | Benutzergruppe bearbeiten |
 
 Innerhalb der Bearbeitungsmaske muss für eine Benutzergruppe stets ein Titel vergeben werden. Dieser kann frei ausgewählt werden. Beachten Sie hierbei, dass Sie diesen Titel möglichst sprechend wählen, um Ihnen und anderen Administratoren in Goobi eine bessere Übersicht zu gewährleisten.
 
-![Eine Benutzergruppe bearbeiten](usergroups2_de.png)
+![Eine Benutzergruppe bearbeiten](screen_usergroups2_de.png)
 
 Zu jeder definierten Benutzergruppe können nun sehr granulare Berechtigungen vergeben werden. Diese können im rechten Bereich des Formulars durch einen einfachen Klick auf eine Berechtigung hinzugefügt werden. Ein Klick auf eine Berechtigung im linken Bereich entfernt diese wieder aus der Benutzergruppe.
 
@@ -212,7 +212,7 @@ Mit dieser Berechtigung erhält der Nutzer die Rechte, sämtliche GoobiScripts �
 
 Es besteht die Möglichkeit, dass Benutzergruppen gezielt Rechte zur Ausführung ausgewählter GoobiScripte erhalten können. Hierfür erfolgt die Zuweisung der Berechtigung nicht durch einen Klick auf eines der angezeichten Rechte im rechten Bereich. Stattdessen erfolgt die Nennung des zu erlaubenden GoobiScripts in dem rechten Eingabefeld und wir mit einem Klick auf dem Button mit Plus-Icon übernommen. Die Zuweisung der Berechtigung erfolgt dabei so, dass `goobiscript_` gefolgt von dem Namen des konkreten GoobiScripts eingetragen wird.
 
-![Eine Berechtigung f&#xFC;r ein GoobiScript zuweisen](goobiScript1_de.png)
+![Eine Berechtigung für ein GoobiScript zuweisen](screen_goobiScript_de.png)
 
 Entsprechend sind beispielhaft folgende Berechtigungen zuweisbar:
 

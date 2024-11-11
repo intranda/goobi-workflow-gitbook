@@ -12,33 +12,33 @@ Die Option Validieren ermöglicht Ihnen, dass Sie auch während der Arbeit inner
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_16a.png](mets_16a.png) | Validierung der Metadaten gegen den verwendeten Regelsatz |
+| ![icon_mets_validate.png](icon_mets_validate.png) | Validierung der Metadaten gegen den verwendeten Regelsatz |
 
-### **Bild fixieren**
+### Bild fixieren
 
 Diese Funktion ermöglicht, dass das dargestellte Bild auch bei langen Metadatenlisten oder während der Vergabe von Paginierungssequenzen nicht im Metadateneditor mitscrollt. Haben Sie diese Funktion aktiviert, so bleibt das ausgewählte Bild zusammen mit seiner Navigationsleiste und den Vergrößerungsoptionen im rechten Bereich fest stehen, auch wenn Sie im rechten Bereich des Metadateneditors scrollen.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_16b.png](mets_16b.png) | Fixieren der Bildanzeige zur Vermeidung des Mitscrollens |
+| ![icon_mets_fix.png](icon_mets_fix.png) | Fixieren der Bildanzeige zur Vermeidung des Mitscrollens |
 
-### **Einstellungen**
+### Einstellungen
 
 Hierbei handelt es sich um einen Menüpunkt mit mehreren Unterpunkten für weitergehende Einstellungen. Klicken Sie auf diesen Menüpunkt, um sich diese Funktionen anzeigen zu lassen.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_16c.png](mets_16c.png) | Hinter diesem Menüpunkt verbirgt sich ein Menü mit weiteren Einstellungen |
+| ![icon_mets_settings.png](icon_mets_settings.png) | Hinter diesem Menüpunkt verbirgt sich ein Menü mit weiteren Einstellungen |
 
-### **Speichern**
+### Speichern
 
 Möchten Sie während der Bearbeitung der Metadaten pausieren oder Ihre Arbeiten sichern, klicken Sie einfach jederzeit auf diesen Menüpunkt, um Ihre Daten zu speichern.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_16d.png](mets_16d.png) | Speichern der aktuellen Struktur- und Metadaten |
+| ![icon_mets_save.png](icon_mets_save.png) | Speichern der aktuellen Struktur- und Metadaten |
 
-### **METS-Editor verlassen**
+### METS-Editor verlassen
 
 Möchten Sie den METS-Editor verlassen, klicken Sie einfach auf diesen Menüpunkt. Ihnen stehen anschließend zwei Optionen zur Verfügung.
 
@@ -50,88 +50,88 @@ Haben Sie den Metadateneditor aus dem Bereich Vorgänge betreten, so gelangen Si
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_16f.png](mets_16f.png) | Verlassen des METS-Editors mit oder ohne vorheriges Speichern |
+| ![icon_mets_leave.png](icon_mets_leave.png) | Verlassen des METS-Editors mit oder ohne vorheriges Speichern |
 
 ## Weitere Einstellungen
 
 Wenn Sie im oberen Menü den Menüpunkt Einstellungen gewählt haben, erhalten Sie Zugriff auf zahlreiche weitere Funktionen.
 
-![Weitere Einstellungen und Funktionen im METS-Editor](30-44d.png)
+![Weitere Einstellungen und Funktionen im METS-Editor](screen1_de.png)
 
-### **Hierarchiestufe im Strukturbaum anzeigen**
+### Hierarchiestufe im Strukturbaum anzeigen
 
 Klicken Sie auf diese Funktion, um im linken Strukturbaum eine Information über die Hierarchieebene eines jeden Strukturelements anzuzeigen. Diese Funktion ist insbesondere dann praktisch, wenn die Strukturbäume über eine sehr tiefe Hierarchie verfügen. Mit Hilfe der dargestellten Hierarchiestufe ist leichter ersichtlich, auf welcher Strukturebene Sie sich gerade befinden.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_21a.png](mets_21a.png) | Hierachiestufe im Strukturbaum anzeigen |
+| ![icon_mets_level.png](icon_mets_level.png) | Hierachiestufe im Strukturbaum anzeigen |
 
-### **Strukturbaum vollständig ein-/ausklappen**
+### Strukturbaum vollständig ein-/ausklappen
 
 Mit dieser Option können Sie innerhalb des Strukturbaums im linken Bereich des Metadateneditors jeweils zwischen der vollständig ausgeklappten und der vollständig eingeklappten Variante wechseln. Dies erlaubt Ihnen auch sehr umfangreiche Strukturbäume mit einem einfachen Klick vollständig auszuklappen ohne jeden einzelnen Unterknoten innerhalb des Strukturbaums einzeln anklicken zu müssen.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_21b.png](mets_21b.png) | Strukturbaum vollständig ein-/ausklappen |
+| ![icon_mets_expand.png](icon_mets_expand.png) | Strukturbaum vollständig ein-/ausklappen |
 
-### **Bild ausblenden / Bild anzeigen**
+### Bild ausblenden / Bild anzeigen
 
 Die Option Bild ausblenden ermöglicht Ihnen jederzeit die Anzeige des Bildes zu unterbinden. Mit der Funktion Bild anzeigen wird das Bild erneut eingeblendet.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_21c.png](mets_21c.png) | Bild ausblenden / Bild anzeigen |
+| ![icon_mets_image.png](icon_mets_image.png) | Bild ausblenden / Bild anzeigen |
 
-### **Paginierung vollständig zurücksetzen**
+### Paginierung vollständig zurücksetzen
 
 Möchten Sie mit der Paginierung noch einmal ganz von vorn beginnen, so bietet sich dazu an dieser Stelle die Möglichkeit. Klicken Sie auf diese Funktion, um sämtliche Angaben zur Paginierung zurückzusetzen und mit der Erschliessung der Paginierungssequenzen neu zu beginnen.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_21d.png](mets_21d.png) | Paginierung vollständig zurücksetzen |
+| ![icon_mets_reset.png](icon_mets_reset.png) | Paginierung vollständig zurücksetzen |
 
-### **Physischen Strukturbaum anzeigen / Logischen Strukturbaum anzeigen**
+### Physischen Strukturbaum anzeigen / Logischen Strukturbaum anzeigen
 
 Mittels dieser Funktion haben Sie die Möglichkeit, statt des logischen Strukturbaums ebenso den physischen Strukturbaum zu bearbeiten. Auf diese Weise ist es Ihnen z.B. möglich, Metadaten für einzelne Seiten zu erfassen oder auch Metadaten zu bearbeiten, die im Bereich der physischen Metadaten gespeichert werden.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_21e.png](mets_21e.png) | Physischen Strukturbaum anzeigen / Logischen Strukturbaum anzeigen |
+| ![icon_mets_tree.png](icon_mets_tree.png) | Physischen Strukturbaum anzeigen / Logischen Strukturbaum anzeigen |
 
 ## Funktionen innerhalb des Menüs im rechten Bereich des Strukturbaums
 
 Weitere Funktionen für die geänderte Anzeige des Strukturbaumes werden Ihnen im Bereich des Strukturbaums angeboten.
 
-### **Verlinkung des Bildes mit dem gewählten Strukturelement**
+### Verlinkung des Bildes mit dem gewählten Strukturelement
 
 Hier verfügen Sie über die Möglichkeit, den Strukturbaum auf der linken Seite des Metadateneditors mit der Bildanzeige zu verknüpfen. Ist diese Funktion aktiviert, wechselt die Bildanzeige jeweils auf die Startseite des in dem Strukturbaum gewählten Strukturelements.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_05.png](mets_05.png) | Verknüpfung des ausgewählten Strukturelements mit der Bildanzeige |
+| ![icon_mets_link.png](icon_mets_link.png) | Verknüpfung des ausgewählten Strukturelements mit der Bildanzeige |
 
-### **Haupttitel im Strukturbaum einblenden**
+### Haupttitel im Strukturbaum einblenden
 
 Mit dieser Funktion ermöglichen Sie, dass im Strukturbaum die Titel, die für einzelne Strukturelemente vergeben wurden, direkt innerhalb des Strukturbaums angezeigt werden. Dies erlaubt unter Umständen eine bessere Übersicht, um z.B. Kapitel anhand ihrer Titel einfacher im Strukturbaum wiederzufinden.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_07.png](mets_06.png) | Haupttitel im Strukturbaum einblenden |
+| ![icon_mets_title.png](icon_mets_title.png) | Haupttitel im Strukturbaum einblenden |
 
-### **Seitenzuweisungen im Strukturbaum anzeigen**
+### Seitenzuweisungen im Strukturbaum anzeigen
 
 Mit Hilfe dieser Funktion wird Ihnen im Strukturbaum aufgelistet, welche Seitenbereiche den jeweiligen Strukturelementen zugewiesen wurden. Hinter jedem Strukturelement wird dadurch in Klammern jeweils die Start- und die Endseite aufgeführt. Die Anzeige der Seiten enthält dabei die Bildnummer sowie das Pagelabel.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_07.png](mets_07.png) | Seitenzuweisungen im Strukturbaum anzeigen |
+| ![icon_mets_assigned.png](icon_mets_assigned.png) | Seitenzuweisungen im Strukturbaum anzeigen |
 
-### **Diese Seite ausdrucken**
+### Diese Seite ausdrucken
 
 Möchten Sie den Strukturbaum ausdrucken, klicken Sie einfach auf diese Funktion.
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_08.png](mets_08.png) | Ausdrucken des Hierarchiebaums der Strukturelemente |
+| ![icon_mets_print.png](icon_mets_print.png) | Ausdrucken des Hierarchiebaums der Strukturelemente |
 
-![Strukturbaum mit allen aktivierten Optionen](30-45d.png)
+![Strukturbaum mit allen aktivierten Optionen](screen2_de.png)

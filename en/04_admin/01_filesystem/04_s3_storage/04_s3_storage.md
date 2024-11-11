@@ -4,7 +4,7 @@ Goobi workflow allows operation with S3-compatible storage. It should be noted t
 
 To run Goobi with S3 as storage, the following two settings must be set within the configuration file `goobi_config.properties`:
 
-```text
+```ini
 # global config if s3 should be used
 useS3=true
 
@@ -14,7 +14,7 @@ S3bucket=workflow-data
 
 Goobi workflow uses the AWS Java SDK internally. This means that the credentials for accessing the storage system are read either from `$HOME/.aws` or from environment variables. If another S3 provider is to be used instead of AWS, the connection can be configured relatively granularly. This requires a few more settings within the same configuration files:
 
-```text
+```ini
 S3AccessKeyID=keyID
 S3SecretAccessKey=secretkey
 S3Endpoint=http://s3.mygoobi.tld

@@ -2,7 +2,7 @@
 
 Sofern der serverseitige Austauschordner nicht leer ist, kann im Bereich für das serverseitige Importieren ein Ordner ausgewählt werden, aus denen die zu einem früheren Zeitpunkt exportierten Bilder nun in den aktuellen Vorgang importiert werden können.
 
-![Serverseitiges Importieren von Dateien](30-55d.png)
+![Serverseitiges Importieren von Dateien](screen_de.png)
 
 Dazu muss definiert werden, an welche Stelle innerhalb der Paginierungssequenz die neue Datei eingefügt werden soll. Anschließend kann gewählt werden, ob die neuen Dateien als `uncounted` eingefügt werden sollen oder ob sie in die bestehende Paginierung integriert werden sollen.
 

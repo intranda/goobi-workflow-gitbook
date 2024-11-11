@@ -6,9 +6,9 @@ Finally, in the `Actions` column, you can edit the details for each user. As an 
 
 | Icon | Description |
 | :--- | :--- |
-| ![ruleset\_02.png](ruleset_02.png) | Create new user |
-| ![ruleset\_01.png](ruleset_01.png) | Edit existing user |
-| ![ruleset\_03.png](ruleset_03.png) | Switch to users role |
+| ![icon_new.png](icon_new.png) | Create new user |
+| ![icon_edit.png](icon_edit.png) | Edit existing user |
+| ![icon_user.png](icon_user.png) | Switch to users role |
 
 To do so, click on the icon to the right in the `Actions` column. This will switch your own authorisation level and role as an administrator to those of the selected user, allowing you for test purposes to check how Goobi behaves for a specific user. This can be particularly useful if individual users have reported problems that cannot otherwise be traced. By switching to the authorisation level and role of a specific user, you can see exactly how the interface appears to that user without that person having to give you his/her user name and password.
 
@@ -16,21 +16,21 @@ Just above the list of users, you will find an option that allows you to display
 
 You can also use the filter above the table to search for a specific user from a large list. Simply enter part of that user’s first name or surname and press the enter key to conduct the search.
 
-![List of registered Goobi users](30-61e.png)
+![List of registered Goobi users](screen1_en.png)
 
 To add a new user, click on the `Create new user` link below the table. To edit the details for an existing user, click on the first icon in the `Actions` column for that user.
 
-![Editing user details](30-62e.png)
+![Editing user details](screen2_en.png)
 
 The `Edit user` dialogue box allows you to change the details already stored in Goobi for that person. As well as the `Surname`, `First name` and `Location`, you can also assign a Goobi `Login` and `Password`.
 
 If Goobi has been instructed at the main configuration stage to authenticate each user against a configured LDAP, you will at this point need to specify for each person which server is to be used for authentication.
 
-In the `Metadata language` input field, you can use a language code in free text form. Please ensure that the language code you use matches exactly the code defined in the ruleset with which users will be working in the METS Editor. In the example given below, the rulesets must contain a localised form of the metadata and structure data descriptors \(`language`\) for English with the language code `en`. If the field is left empty, the language set in the browser is used in the metadata editor.
+In the `Metadata language` input field, you can use a language code in free text form. Please ensure that the language code you use matches exactly the code defined in the ruleset with which users will be working in the METS Editor. In the example given below, the rulesets must contain a localised form of the metadata and structure data descriptors (`language`) for English with the language code `en`. If the field is left empty, the language set in the browser is used in the metadata editor.
 
-_**Localisation of the metadata item 'logicalPageNumber' for various languages within a ruleset**_
+**Localisation of the metadata item 'logicalPageNumber' for various languages within a ruleset**
 
-```markup
+```xml
 <MetadataType>
     <Name>logicalPageNumber</Name>
     <language name="de">logische Seitenzahl (gedruckte Seitenzahl)</language>
@@ -45,11 +45,11 @@ By activating the `batch download` checkbox, you can allow individual users to d
 
 Thanks to its comprehensive system of user authorisations, Goobi ensures that each person can be assigned not only to different projects but also to different roles. Furthermore, every user can perform more than one role at the same time. In this context, roles can also be understood as levels of qualification or as skills. These roles can be assigned in the `User groups` area. To assign additional roles to a specific user, simply click on the `Add user groups` button for that user.
 
-![Adding user groups for a specific user](30-63e.png)
+![Adding user groups for a specific user](screen3_en.png)
 
 In the `User group` window, select all the user groups to which you want to assign the user and then click on the Save button to confirm your selection. You will find that the selected user has now been assigned to those user groups. You can follow the same process to assign users to projects.
 
-![Adding projects to a specific user](30-64e.png)
+![Adding projects to a specific user](screen4_en.png)
 
 To remove a person from a particular user group or project, click on the symbol for deletion next to that user group or project. Next, to apply permanently any changes you have made, click on the `Save` button.
 

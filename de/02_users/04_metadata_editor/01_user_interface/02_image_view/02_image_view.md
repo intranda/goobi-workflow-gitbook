@@ -10,7 +10,7 @@ Die aktuelle Seite wird in der Mitte angezeigt, jeweils umgeben mit den nächste
 
 **Tastenkombinationen für die Navigation zwischen den Bildern im Metadateneditor**
 
-| **Tastenkombination** | Beschreibung der Funktion |
+| Tastenkombination | Beschreibung der Funktion |
 | :--- | :--- |
 | `Strg` + `Shift` + `Cursor links` | zum vorherigen Bild wechseln |
 | `Strg` + `Shift` + `Cursor rechts` | zum nächsten Bild wechseln |
@@ -25,7 +25,7 @@ Mit Hilfe dieser Tastenkombinationen ist es Ihnen jederzeit möglich, einfach un
 
 Neben den Möglichkeiten mittels der Navigationsleiste, der Tastenkombinationen und der direkten Eingabe zwischen den einzelnen Bildern zu wechseln, können Sie mit Goobi außerdem die Bilddarstellung Ihren Wünschen anpassen. Klicken Sie einfach auf die beiden Lupensymbole unterhalb der Bildernavigationsleiste, um die Anzeige des aktuellen Bildes zu vergrößern oder zu verkleinern. Zwischen den beiden Lupensymbolen zeigt Ihnen Goobi die aktuelle Zoomstufe der Darstellung an. Möchten Sie gezielt eine bestimmte Vergrößerungsstufe wählen, klicken Sie einfach zwischen die beiden Lupensymbole. Geben Sie hier den gewünschten Wert für die Zoomstufe ein und bestätigen Sie anschließend Ihre Eingabe mittels der Eingabetaste, um die gewünschte Zoomstufe zu übernehmen.
 
-![Direkte Eingabe einer Zoomstufe f&#xFC;r die Bilddarstellung](30-42d.png)
+![Direkte Eingabe einer Zoomstufe für die Bilddarstellung](screen1_de.png)
 
 ## Rotation
 
@@ -37,17 +37,17 @@ Enthält das aktuelle Bild vielleicht Informationen, die sich nur im Querformat 
 
 ## Auswahl des Bildordners
 
-Unterhalb der Bildanzeige bietet Goobi Ihnen die Möglichkeit, zwischen unterschiedlichen Bildderivaten zu wählen, sofern diese vorhanden sind. In der Auswahlliste Ordner listet Ihnen Goobi alle Bildverzeichnisse zu dem aktuell gewählten Vorgang aus. Verfügen Sie beispielsweise zu einem Vorgang jeweils über mehrere Bildderivate, z.B. für die Masterimages und skalierte bzw. komprimierte Fassungen von Bildern oder Derivate mit einer anderer Farbtiefe \(z.B. bitonale Aufnahmen\), so können Sie zwischen diesen Derivaten jeweils einfach durch Auswahl des gewünschten Ordners wechseln.
+Unterhalb der Bildanzeige bietet Goobi Ihnen die Möglichkeit, zwischen unterschiedlichen Bildderivaten zu wählen, sofern diese vorhanden sind. In der Auswahlliste Ordner listet Ihnen Goobi alle Bildverzeichnisse zu dem aktuell gewählten Vorgang aus. Verfügen Sie beispielsweise zu einem Vorgang jeweils über mehrere Bildderivate, z.B. für die Masterimages und skalierte bzw. komprimierte Fassungen von Bildern oder Derivate mit einer anderer Farbtiefe (z.B. bitonale Aufnahmen), so können Sie zwischen diesen Derivaten jeweils einfach durch Auswahl des gewünschten Ordners wechseln.
 
 ## Setzen von Repräsentanten
 
 Innerhalb des METS-Editors kann ein Bild als Repräsentant des Objektes ausgezeichnet werden. Der Repräsentant ist ein Bild, durch den das Werk repräsentiert wird. Üblicherweise ist dies das Titelblatt. Die meisten Digitalisierungsportale wie die Europeana, ZVDD, VD18 oder auch der Goobi viewer nutzen das erste Bild der METS-Datei als Repräsentant des Objektes, es sei denn, es wird explizit ein anderen Bild als Repräsentant definiert.
 
-![Festlegen des Repr&#xE4;sentanten innerhalb des METS-Editors](30-43d.png)
+![Festlegen des Repräsentanten innerhalb des METS-Editors](screen2_de.png)
 
 Um den Repräsentanten festzulegen, wählt der Nutzer hierfür zunächst das gewünschte Bild aus der bereitgestellten Liste aus. Ein anschließender Klick auf das zugehörige Icon definiert anschließend dieses Bild als Repräsentanten. Innerhalb der METS Datei wird somit das ausgewählte Bild durch das Attribut USE=“banner“ ausgezeichnet.
 
-```markup
+```xml
 <mets:file ID="FILE_0002_PRESENTATION" MIMETYPE="image/tiff" USE="banner">
      <mets:FLocat LOCTYPE="URL"     
      xlink:href="file:///opt/digiverso/viewer/media/BV041228853/00000003.tif"/>

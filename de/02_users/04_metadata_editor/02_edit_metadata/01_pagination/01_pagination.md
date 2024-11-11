@@ -4,7 +4,7 @@ Bei der Paginierung handelt es sich um die Vergabe sogenannter `Page Labels` zu 
 
 Um die Paginierung für ein Werk zu bearbeiten, öffnen Sie im Metadateneditor mit einem Klick auf der Navigationsleiste den Bereich der Paginierung. Goobi ermittelt automatisch wie viele Bilder sich im Verzeichnis des aktuellen Vorgangs befinden und führt diese in einer Auflistung untereinander auf. Rechts daneben ist der Bereich, in dem die Paginierung für diese eingelesenen Images vergeben werden kann. Wie Sie in der Box `Seitenauswahl` sehen können, wurde durch Goobi zunächst festgelegt, dass alle Seiten fortlaufend arabisch nummeriert werden, beginnend bei der Zahl 1.
 
-![Paginierung mit arabisch fortlaufender Z&#xE4;hlung ab der Zahl 1](30-46d.png)
+![Paginierung mit arabisch fortlaufender Zählung ab der Zahl 1](screen1_de.png)
 
 Navigieren Sie nun im rechten Bereich des Metadateneditors mittels der Tastenkombination oder der Bildernavigationsleiste durch das gesamte Imageset, um die aufgedruckte Paginierung der einzelnen Bilder zu ermitteln. In den meisten Fällen beginnen Bücher mit unpaginierten Seiten. Klicken Sie daher in der Box `Seitenauswahl` auf die erste Checkbox für das Image 1. Wählen Sie anschließend in der Box `Paginierung festlegen` in der Auswahlliste `unnummeriert` und klicken anschließend auf den Link `Ab der ersten markierten Seite`. Somit haben Sie dem gesamten Werk von der ersten bis zur letzten Seite als Paginierung zugewiesen, dass auf keiner Seite eine Seitenzahl aufgedruckt ist. Navigieren Sie nun durch die Seiten, bis Sie zur ersten paginierten Seite kommen.
 
@@ -12,9 +12,9 @@ Navigieren Sie nun im rechten Bereich des Metadateneditors mittels der Tastenkom
 **Tipp:** Wenn Sie beim Navigieren durch die Bilder eine Seite ermittelt haben, auf der sich die Paginierung ändert, klicken Sie einfach auf das Bild. Dadurch wird automatisch in der Box `Seitenauswahl` die passende Checkbox ausgewählt. Durch das Drücken der Space-Taste auf der Tastatur wird diese Checkbox nun automatisch gesetzt. Alternativ können Sie natürlich auch das passende Bild in der Liste `Seitenauswahl` ermitteln und mit der Maus auswählen.
 {% endhint %}
 
-Bitte beachten Sie, dass Sie sich für die Auswahl der Seiten stets an der Bildnummer orientieren und nicht an der aufgedruckten Seitennummer. Sie erkennen die Bildnummer daran, dass in Goobi zu jedem Bild stets zwei Bezeichnungen angezeigt werden: Links wird die Nummer der Datei innerhalb des Dateisystems angezeigt, die sogenannte Bildnummer. Gefolgt von einem Doppelpunkt wird rechts die aufgedruckte Seitenzahl angezeigt, das sogenannte Pagelabel. Orientieren Sie sich bitte immer an der Bildnummer - also der Zahl links vom Doppelpunkt - um eine versehentliche Auswahl falscher Seiten zu vermeiden, schließlich kann eine aufgedruckte Seitenzahl \(das Pagelabel\) in einem Werk mehrfach vergeben worden sein.
+Bitte beachten Sie, dass Sie sich für die Auswahl der Seiten stets an der Bildnummer orientieren und nicht an der aufgedruckten Seitennummer. Sie erkennen die Bildnummer daran, dass in Goobi zu jedem Bild stets zwei Bezeichnungen angezeigt werden: Links wird die Nummer der Datei innerhalb des Dateisystems angezeigt, die sogenannte Bildnummer. Gefolgt von einem Doppelpunkt wird rechts die aufgedruckte Seitenzahl angezeigt, das sogenannte Pagelabel. Orientieren Sie sich bitte immer an der Bildnummer - also der Zahl links vom Doppelpunkt - um eine versehentliche Auswahl falscher Seiten zu vermeiden, schließlich kann eine aufgedruckte Seitenzahl (das Pagelabel) in einem Werk mehrfach vergeben worden sein.
 
-Nachdem Sie diejenige Seite ermittelt haben, ab der sich die Paginierung innerhalb des Werkes ändert, und die Checkbox dieser Seite markiert haben, wählen Sie in der Box `Paginierung festlegen` den gewünschten Paginierungstyp. Tragen Sie anschließend die aktuelle Seitenzahl \(bzw. Seitenbenennung\) ein und klicken erneut auf den Link `Ab der ersten markierten Seite`. Somit vergibt Goobi sämtlichen Images ab der gewählten Seite die gewünschte Seitenzahl fortlaufend hochgezählt.
+Nachdem Sie diejenige Seite ermittelt haben, ab der sich die Paginierung innerhalb des Werkes ändert, und die Checkbox dieser Seite markiert haben, wählen Sie in der Box `Paginierung festlegen` den gewünschten Paginierungstyp. Tragen Sie anschließend die aktuelle Seitenzahl (bzw. Seitenbenennung) ein und klicken erneut auf den Link `Ab der ersten markierten Seite`. Somit vergibt Goobi sämtlichen Images ab der gewählten Seite die gewünschte Seitenzahl fortlaufend hochgezählt.
 
 Die Paginierung kann sich unter Umständen mehrfach im Werk ändern. Häufig sind ebenfalls ungezählte Seiten oder doppelte vergebene Seitenzahlen anzutreffen. Seiten, auf denen ein neues Strukturelement beginnt, wie z. B. ein neues Kapitel, auf dem jedoch keine Seitenzahl aufgedruckt ist, auf den Folgeseiten jedoch mit der Seitenzahl fortgesetzt wird, werden mit einer fingierten Paginierung versehen. Eine fingierte Paginierung ist daran zu erkennen, dass trotz fehlender Seitenzahl eine logische Zählung angenommen wird und daher die angenommene Seitenzahl mit eckigen Klammern versehen wird.
 
@@ -22,7 +22,7 @@ Die Paginierung kann sich unter Umständen mehrfach im Werk ändern. Häufig sin
 **Beispiel:** Fängt beispielsweise auf einer Seite ohne aufgedruckte Seitenzahl ein Kapitel an, und auf der folgenden Seite ist als Seitenzahl eine `4` aufgedruckt, so vergibt man während des Arbeitsschritts der Paginierung für die Startseite des Kapitels eine sogenannte fingierte Seitenzahl. In diesem Fall würde man der Startseite des Kapitels eine fingierte - also angenommene - Seite 3 zuweisen. Fingierte Seitenzahlen basieren entsprechend auf einer Interpretation, die aus der fehlenden Seitenbenennung und den vorhandenen Seitenbenennungen der Folgeseiten abgeleitet wird. Fingierte Seitenzahlen werden in eckigen Klammern dargestellt. Für die Startseite des Kapitels aus diesem Beispiel würde man entsprechend `3` als Seitenbenennung zuweisen.
 {% endhint %}
 
-![Paginiertes Werk mit unnummerierten Seiten, r&#xF6;misch fortlaufender, arabisch fingierter Seitenz&#xE4;hlung sowie einer fortlaufenden arabischen Z&#xE4;hlung.](30-47d.png)
+![Paginiertes Werk mit unnummerierten Seiten, römisch fortlaufender, arabisch fingierter Seitenzählung sowie einer fortlaufenden arabischen Zählung.](screen2_de.png)
 
 Für eine effiziente Paginierung nutzen Sie einfach die Tastenkombination, die im [Abschnitt Seitenanzeige](4.1/4.1.2.md) beschrieben wurde. Sie können insbesondere bei umfangreichen Werken, bei denen Sie nicht jede einzelne Seite prüfen können oder möchten, stichprobenartig sicherstellen, dass Ihre vergebene Paginierung tatsächlich übereinstimmt. In den meisten Fällen lassen sich Sprünge innerhalb der Paginierung relativ schnell herausfinden. Navigieren Sie dazu einfach mittels der Tastenkombinationen in 20er Schritten durch das Imageset und vergleichen Sie die ausgewählte Seite und deren aufgedruckte Seitenzahl mit denjenigen Paginierungen, die Sie durch die fortlaufende automatische Vergabe zugewiesen haben. Sprünge in der Paginierung erkennen Sie daran, dass die vergebene Paginierung nicht mehr synchron zu der tatsächlichen gedruckten Paginierung verläuft.
 
@@ -30,19 +30,19 @@ Alternativ können Sie auch jederzeit neben einer Seite innerhalb der Box Seiten
 
 | Icon | Beschreibung |
 | :--- | :--- |
-| ![mets\_21c.png](mets_21c.png) | Bild der gewählten Seite direkt anzeigen |
+| ![icon_mets_image.png](icon_mets_2.png) | Bild der gewählten Seite direkt anzeigen |
 
 Goobi unterstützt für die Paginierung verschiedene Arten von Seitenzählungen. Neben der Vergabe von arabischen und fingierten arabischen Seitenzahlen, römischen und fingierten römischen Seitenzahlen, Freitexteingaben sowie unnummerierten Seiten, kann außerdem die Abfolge der fortlaufenden Zählung in Goobi beeinflusst werden. Innerhalb des Menüs der Box Paginierung festlegen lässt sich in Goobi festlegen, wie die Seitenabfolge im Buch tatsächlich auszusehen hat.
 
 | Icon | Bechreibung |
 | :--- | :--- |
-| ![mets\_09a.png](mets_09a.png) | Festlegung des Paginierungstyps |
+| ![icon_mets_pagination.png](icon_mets_1.png) | Festlegung des Paginierungstyps |
 
 Folgende Seitenfolgen werden durch Goobi unterstützt:
 
-_**Paginierungstypen des Metadateneditors**_
+**Paginierungstypen des Metadateneditors**
 
-| **Paginierungstyp** | **Beschreibung des Paginierungstyps** |
+| Paginierungstyp | Beschreibung des Paginierungstyps |
 | :--- | :--- |
 | Seitenzählung | Auf jeder einzelnen Seite ist eine Seitenzahl abgedruckt. |
 | Spaltenzählung | Auf jeder einzelnen Seite sind jeweils zwei Spalten vorhanden, die einzeln nummeriert sind. Die Zählung vergibt daher pro Seite zwei Seitenzahlen. Innerhalb der Box `Seitenauswahl` wird dies daran ersichtlich, dass bei fortlaufender Zählung zwischen den Seiten jeweils Sprünge von zwei Seitenzahlen existieren, da auf jeder einzelnen Seite jede Spalte eine Spaltennummer bekommt. |

@@ -6,7 +6,7 @@ Once you have a valid user name and password, simply open the Goobi start page. 
 
 ![Goobi start page for users who are not logged in](screen1_en.png)
 
-Once you have logged in, the Goobi screen will change. The menu bar will now contain a range of options for working with Goobi \(depending on your authorisation level\). Your screen will appear roughly the same as in the diagram below.
+Once you have logged in, the Goobi screen will change. The menu bar will now contain a range of options for working with Goobi (depending on your authorisation level). Your screen will appear roughly the same as in the diagram below.
 
 ![Goobi start page after login showing extended navigation options](screen2_en.png)
 
