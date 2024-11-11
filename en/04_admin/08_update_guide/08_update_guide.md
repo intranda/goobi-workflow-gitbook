@@ -6,4 +6,4 @@ This section contains detailed documentation on how to carry out updates to Goob
 
 Once the preparatory work has been successfully completed, the actual update can take place. This is described in this documentation so that the Goobi workflow can be updated step by step from the installed version to the latest version.
 
-{% page-ref page="02_update_steps/02_update_steps.md" %}
+[Update steps](02_update_steps/02_update_steps.md)

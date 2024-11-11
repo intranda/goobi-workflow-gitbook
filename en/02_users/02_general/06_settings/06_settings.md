@@ -25,9 +25,9 @@ Here you can select the tasks about which the user wants to be informed in case 
 {% hint style="info" %}
 You may need to make changes to your Goobi configuration in order to activate mail notifications and be able to use all its functions:
 
-1. Create and modify the configuration file {% page-ref page="../../../04_admin/06_config_files/05_goobi_mail.xml/05_goobi_mail.xml.md" %}
-2. Set a `jwtSecret` in the file {% page-ref page="../../../04_admin/06_config_files/02_goobi_config.properties/02_goobi_config.properties.md" %}
-3. Unlock the mail deactivation endpoint in the {% page-ref page="../../../04_admin/06_config_files/12_goobi_rest.xml/12_goobi_rest.xml.md" %} file
+1. Create and modify the configuration file [goobi_mail.xml](../../../04_admin/06_config_files/05_goobi_mail.xml/05_goobi_mail.xml.md)
+2. Set a `jwtSecret` in the file [goobi_config.properties](../../../04_admin/06_config_files/02_goobi_config.properties/02_goobi_config.properties.md)
+3. Unlock the mail deactivation endpoint in the [goobi_rest.xml](../../../04_admin/06_config_files/12_goobi_rest.xml/12_goobi_rest.xml.md) file
 {% endhint %}
 
 If the user has the user right `Notifications for all status changes`, all tasks are displayed instead of only those in which he himself is a member. In addition, notifications for further status changes can also be selected in this case, such as for error cases or the completion of processing.
