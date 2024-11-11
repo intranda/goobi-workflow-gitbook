@@ -162,6 +162,4 @@ The `LayoutWizzard.jar` in `/opt/digiverso/{goobi,itm}/lib/` must be the same Sy
 
 After all preliminary work has been carried out, the actual update can take place. This is explained in detail in individual steps here:
 
-{% content-ref url="9.2/" %}
-[9.2](9.2/)
-{% endcontent-ref %}
+[Update steps](../02_update_steps/02_update_steps.md)

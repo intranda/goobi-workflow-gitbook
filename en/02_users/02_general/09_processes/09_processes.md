@@ -20,6 +20,6 @@ The `Status` column shows you immediately how far a particular process has advan
 
 ![List of processes with detailed view of one selected process](screen3_en.png)
 
-In the example above, you can see which individual steps out of the workflow have already been completed by users, which are currently being processed and which are still locked until the preceding steps have been completed. You can search for one or more specific processes from the list at any time using the `Filter processes` box. Your search term will need to be entered using the correct syntax. For more information, please see [section Filtering processes](../../manager/7/7.1.md).
+In the example above, you can see which individual steps out of the workflow have already been completed by users, which are currently being processed and which are still locked until the preceding steps have been completed. You can search for one or more specific processes from the list at any time using the `Filter processes` box. Your search term will need to be entered using the correct syntax. For more information, please see [section Filtering processes](../../manager/7/7.md).
 
-A detailed description of all the functions provided by Goobi in process view can be found in the [section Goobi Management](../../manager/1.md), which contains further information about the functions described above and all other available options.
+A detailed description of all the functions provided by Goobi in process view can be found in the [section Goobi Management](../../manager/manager.md), which contains further information about the functions described above and all other available options.

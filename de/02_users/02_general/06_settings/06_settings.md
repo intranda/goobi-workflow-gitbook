@@ -26,7 +26,7 @@ Hier lassen sich nun diejenigen Aufgaben auswählen, über die der Nutzer im Fal
 {% hint style="info" %}
 Um die Mail-Benachrichtigungen zu aktivieren und mit allen Funktionalitäten nutzen zu können, müssen eventuell noch Änderungen an der Goobi-Konfiguration vorgenommen werden:
 
-1. Die Konfigurationsdatei [goobi_mail.xml](../../admin/7/7.4.md) anlegen und anpassen
+1. Die Konfigurationsdatei [goobi_mail.xml](../../admin/7/7.md) anlegen und anpassen
 2. Ein `jwtSecret` in der Datei `goobi_config.properties` setzen
 3. Den Mail-Deaktivierungs-Endpoint in der  Datei [goobi_rest.xml](broken-reference) freischalten
 {% endhint %}

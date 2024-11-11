@@ -4,7 +4,7 @@ The methods used by scan operators working with Goobi on a daily basis do not va
 
 !['My tasks' for a scan operator](screen1_en.png)
 
-This list of tasks contains all the workflow steps that the scan operator is authorised to perform as a member of one or more projects and user groups. The symbols in the `Actions` columns indicate the current status of the workflow steps in those rows. As described above in [section My tasks](../2/2.8.md), each user can see immediately which tasks are still open and waiting to be processed and which are already `in progress`, i.e. being processed by that user or another user with the same level of authorisation and qualifications. The symbols in the column `Priority` indicate error messages or priorities.
+This list of tasks contains all the workflow steps that the scan operator is authorised to perform as a member of one or more projects and user groups. The symbols in the `Actions` columns indicate the current status of the workflow steps in those rows. As described above in [section My tasks](../2/2.md), each user can see immediately which tasks are still open and waiting to be processed and which are already `in progress`, i.e. being processed by that user or another user with the same level of authorisation and qualifications. The symbols in the column `Priority` indicate error messages or priorities.
 
 From an individual user’s perspective, working with Goobi on a daily basis generally involves selecting a task from the list of those offered and then clicking on the corresponding `Actions` button at the end of the row to view full details of that task.
 

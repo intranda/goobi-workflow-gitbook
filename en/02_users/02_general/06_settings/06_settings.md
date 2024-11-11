@@ -25,7 +25,7 @@ Here you can select the tasks about which the user wants to be informed in case 
 {% hint style="info" %}
 You may need to make changes to your Goobi configuration in order to activate mail notifications and be able to use all its functions:
 
-1. Create and modify the configuration file [goobi_mail.xml](../../admin/7/7.4.md)
+1. Create and modify the configuration file [goobi_mail.xml](../../admin/7/7.md)
 2. Set a `jwtSecret` in the file `goobi_config.properties`
 3. Unlock the mail deactivation endpoint in the [goobi_rest.xml](broken-reference) file
 {% endhint %}

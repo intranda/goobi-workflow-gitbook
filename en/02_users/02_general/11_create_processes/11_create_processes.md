@@ -20,7 +20,7 @@ This will open a new window allowing you to import the bibliographical data for 
 
 ![Creating a new process in Goobi](screen2_en.png)
 
-This manual contains a very broad overview of the ways in which new processes can be created in Goobi by importing metadata from a library catalogue. For more information and details of alternative methods of creating one or more processes at the same time in Goobi, please refer to the [section Goobi Management](../../manager/1.md). To import bibliographical data from one of the configured library catalogues (Pica, Aleph, Z39.50, etc.), select a catalogue from the `Search in OPAC` drop-down list and enter the relevant identifier. Next, click on the corresponding `Import` button. Goobi will now fill the relevant fields automatically and set the correct publication type.
+This manual contains a very broad overview of the ways in which new processes can be created in Goobi by importing metadata from a library catalogue. For more information and details of alternative methods of creating one or more processes at the same time in Goobi, please refer to the [section Goobi Management](../../manager/manager.md). To import bibliographical data from one of the configured library catalogues (Pica, Aleph, Z39.50, etc.), select a catalogue from the `Search in OPAC` drop-down list and enter the relevant identifier. Next, click on the corresponding `Import` button. Goobi will now fill the relevant fields automatically and set the correct publication type.
 
 ![Bibliographical data imported automatically from the library catalogue](screen3_en.png)
 
