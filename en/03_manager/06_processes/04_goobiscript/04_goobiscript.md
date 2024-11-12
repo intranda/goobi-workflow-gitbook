@@ -13,7 +13,7 @@ After completing the GoobiScript, you can now apply it to selected hits or the e
 {% hint style="info" %}
 Please note that you may not have access to all the GoobiScripts that Goobi offers. Some of the GoobiScripts may be hidden. Your user group may also not have been granted access to all GoobiScripts. A more detailed explanation of how to assign permissions to GoobiScripts can be found here:
 
-[https://docs.goobi.io/goobi-workflow-en/manager/6\#individual-goobiscripts](https://docs.goobi.io/goobi-workflow-en/manager/6#individual-goobiscripts)
+{% page-ref page="../../05_usergroups/05_usergroups.md" %}
 {% endhint %}
 
 ## Syntax

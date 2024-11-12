@@ -13,7 +13,7 @@ Nach dem Vervollständigen des GoobiScripts können Sie dieses nun auf ausgewäh
 {% hint style="info" %}
 Bitte beachten Sie, dass Sie ggf. nicht auf alle GoobiScripte Zugriff haben, über die Goobi verfügt. Einige der GoobiScripte können ausgeblendet sein. Unter Umständen wurde Ihrer Benutzergruppe auch nicht der Zugriff auf alle GoobiScripte gewährt. Eine genauer Erläuterung über die Zuweisung der Berechtigungen für GoobiScripte findet sich hier:
 
-[https://docs.goobi.io/goobi-workflow-de/manager/6\#individuelle-goobiscripte](https://docs.goobi.io/goobi-workflow-de/manager/6#individuelle-goobiscripte)
+{% page-ref page="../../05_usergroups/05_usergroups.md" %}
 {% endhint %}
 
 ## Syntax

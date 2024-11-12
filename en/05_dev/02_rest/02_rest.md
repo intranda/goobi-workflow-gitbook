@@ -6,7 +6,7 @@ Goobi workflow has a very comprehensive REST API that can be used to connect ext
 
 This configuration of the REST API is already documented in detail here:
 
-{% embed url="https://docs.goobi.io/goobi-workflow-en/admin/7/7.12" caption="https://docs.goobi.io/goobi-workflow-en/admin/7/7.12" %}
+{% page-ref page="../../04_admin/06_config_files/12_goobi_rest.xml/12_goobi_rest.xml.md" %}
 
 For easy testing, it may be helpful to temporarily adjust the configuration within the configuration file `goobi_rest.xml` so that all commands can be called from the desired IP range (e.g. for localhost) with a simple password (`token`). Such an example configuration could look like this:
 
