@@ -65,7 +65,7 @@ Innerhalb des Verzeichnisses, dass auf `_master` endet, finden sich die Master-D
 In dem Verzeichnis, dessn Name auf `_source` endet, können Quelldateien abgelegt werden, auf die die Goobi-Anwender ggf. ebenfalls Zugriff haben sollen, um diese hochzuladen oder einzusehen. Die hier abgelegten Dateien werden im Rahmen des Standardexports von Goobi workflow berücksichtigt und mit exportiert. Im Falle es Exports zum Goobi viewer bedeutet dies beispielsweise, dass die Daten aus dem Source-Ordner ebenfalls in den `hotfolder` des Goobi viewers exportiert werden.
 
 ### Weitere Unterverzeichnisse
-Neben den hier genannten Verzeichnissen können auch weitere Unterverzeichnisse vorhanden sein. Als Beispiel ist hier ein Verzeichnis aufgeführt, dessen Name auf `_raw` endet, um dort beispielsweise RAW-Dateien von Kameras oder auch andere Daten abzulegen. Auch auf diese Ordner können die Nutzer von Goobi somit Zugriff erhalten. Eine Erläuterung, wie solche zusätzlichen Verzeichnisse in Goobi workflow konfiguriert werden, [findet sich hier](../../../06_config_files/02_goobi_config.properties/de.md#verzeichnisse).
+Neben den hier genannten Verzeichnissen können auch weitere Unterverzeichnisse vorhanden sein. Als Beispiel ist hier ein Verzeichnis aufgeführt, dessen Name auf `_raw` endet, um dort beispielsweise RAW-Dateien von Kameras oder auch andere Daten abzulegen. Auch auf diese Ordner können die Nutzer von Goobi somit Zugriff erhalten. Eine Erläuterung, wie solche zusätzlichen Verzeichnisse in Goobi workflow konfiguriert werden, [findet sich hier](../../../06_config_files/02_goobi_config.properties/02_goobi_config.properties.md).
 
 
 ## OCR

@@ -65,7 +65,7 @@ The master files are located in the directory that ends with `_master`. These ar
 In the directory whose name ends in `_source`, source files can be stored to which Goobi users should also have access in order to upload or view them. The files stored here are taken into account and exported as part of the standard Goobi workflow export. In the case of export to the Goobi viewer, for example, this means that the data from the source folder is also exported to the Goobi viewer's `hotfolder`.
 
 ### Further subdirectories
-In addition to the directories listed here, there may also be other subdirectories. For example, a directory whose name ends in `_raw` is listed here in order to store RAW files from cameras or other data there. Goobi users can also gain access to these folders. An explanation of how such additional directories are configured in Goobi workflow [can be found here](../../../06_config_files/02_goobi_config.properties/en.md#directories).
+In addition to the directories listed here, there may also be other subdirectories. For example, a directory whose name ends in `_raw` is listed here in order to store RAW files from cameras or other data there. Goobi users can also gain access to these folders. An explanation of how such additional directories are configured in Goobi workflow [can be found here](../../../06_config_files/02_goobi_config.properties/02_goobi_config.properties.md).
 
 
 ## OCR
