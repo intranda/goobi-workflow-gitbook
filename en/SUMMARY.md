@@ -73,7 +73,7 @@
   * [Global directory structure](04_admin/01_filesystem/01_folder_structure/01_folder_structure.md)
     * [‘config’ sub-directory](04_admin/01_filesystem/01_folder_structure/01_config/01_config.md)
     * [‘import’ sub-directory](04_admin/01_filesystem/01_folder_structure/02_import/02_import.md)
-    * [‘metadata’ sub-directory](04_admin/01_filesystem/01_folder_structure/03_metadata/01.md)
+    * [‘metadata’ sub-directory](04_admin/01_filesystem/01_folder_structure/03_metadata/03_metadata.md)
     * [‘plugins’ sub-directory](04_admin/01_filesystem/01_folder_structure/04_plugins/04_plugins.md)
     * [‘rulesets’ sub-directory](04_admin/01_filesystem/01_folder_structure/05_rulesets/05_rulesets.md)
     * [‘scripts’ sub-directory](04_admin/01_filesystem/01_folder_structure/06_scripts/06_scripts.md)

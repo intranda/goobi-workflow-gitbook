@@ -73,7 +73,7 @@
   * [Globale Verzeichnisstruktur](04_admin/01_filesystem/01_folder_structure/01_folder_structure.md)
     * [Unterverzeichnis ‚config’](04_admin/01_filesystem/01_folder_structure/01_config/01_config.md)
     * [Unterverzeichnis ‚import’](04_admin/01_filesystem/01_folder_structure/02_import/02_import.md)
-    * [Unterverzeichnis ‚metadata’](04_admin/01_filesystem/01_folder_structure/03_metadata/01.md)
+    * [Unterverzeichnis ‚metadata’](04_admin/01_filesystem/01_folder_structure/03_metadata/03_metadata.md)
     * [Unterverzeichnis ‚plugins’](04_admin/01_filesystem/01_folder_structure/04_plugins/04_plugins.md)
     * [Unterverzeichnis ‚rulesets’](04_admin/01_filesystem/01_folder_structure/05_rulesets/05_rulesets.md)
     * [Unterverzeichnis ‚scripts’](04_admin/01_filesystem/01_folder_structure/06_scripts/06_scripts.md)
